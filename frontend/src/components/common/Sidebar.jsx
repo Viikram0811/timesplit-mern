@@ -9,6 +9,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
     { path: '/schedule', label: 'Schedule', icon: '📅' },
     { path: '/stress', label: 'Stress Tracking', icon: '😌' },
     { path: '/chatbot', label: 'AI Chatbot', icon: '💬' },
+    { path: '/resources', label: 'Resources', icon: '📚' },
     { path: '/profile', label: 'Profile', icon: '👤' },
   ];
 

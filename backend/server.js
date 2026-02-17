@@ -12,6 +12,7 @@ import scheduleRoutes from './routes/scheduleRoutes.js';
 import stressRoutes from './routes/stressRoutes.js';
 import chatRoutes from './routes/chatRoutes.js';
 import dashboardRoutes from './routes/dashboardRoutes.js';
+import resourceRoutes from './routes/resourceRoutes.js';
 
 // Load environment variables
 dotenv.config();
@@ -44,6 +45,7 @@ app.use('/api/schedules', scheduleRoutes);
 app.use('/api/stress', stressRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/resources', resourceRoutes);
 
 // Error handling middleware (must be last)
 app.use(errorHandler);

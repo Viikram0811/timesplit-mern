@@ -3,6 +3,7 @@ dotenv.config();
 
 import ChatHistory from '../models/ChatHistory.js';
 import { GoogleGenAI } from '@google/genai';
+import { loadKnowledge } from '../services/knowledgeService.js';
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
@@ -65,11 +66,21 @@ export const sendMessage = async (req, res, next) => {
 
     if (process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY !== 'your_gemini_api_key_here') {
       try {
+        // Load user's knowledge base (PDFs, notes, etc.)
+        const knowledgeText = await loadKnowledge(req.user.id, 6000);
+
         // Prepare messages for Gemini (last 10 messages for context)
         const recentMessages = chatHistory.messages.slice(-10);
         
         // Build conversation history for Gemini
         let conversationText = 'You are a helpful academic assistant for students. Help them with their studies, answer questions, provide study tips, and assist with academic planning. Be friendly, encouraging, and educational.\n\n';
+        
+        if (knowledgeText) {
+          conversationText += 'Here is the student\'s study material and notes. Use this as the primary source of truth when relevant. If the answer is clearly present here, quote and explain it. If not, fall back to your own knowledge.\n\n';
+          conversationText += '--- STUDY MATERIAL START ---\n';
+          conversationText += knowledgeText;
+          conversationText += '\n--- STUDY MATERIAL END ---\n\n';
+        }
         
         recentMessages.forEach(msg => {
           if (msg.role === 'user') {

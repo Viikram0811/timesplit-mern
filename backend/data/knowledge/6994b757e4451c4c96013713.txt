@@ -1,0 +1,603 @@
+
+
+===== NEW DOCUMENT: sequel.pdf - 2026-02-17T18:47:41.677Z =====
+
+SQL  
+Sql is used to communicate with the data base 
+Spreadsheets cannot handle huge amount of data so we use databases to store the it is secure and 
+retrieving the data is very easy using SQL 
+DBMS 
+Many people, Apis, BI soŌware interact with the database, DBMS is the soŌware that manages the 
+database. 
+Server are the machines where database lives 
+Types of databases 
+SQL databases 
+1.RelaƟonal database (postgresql, mysql, MicrosoŌ sql server) 
+No SQL databases 
+1.Key-value pairs (amazon dynamo db) 
+2.column based (amazon redshiŌ, apache Cassandra) 
+3.Graph 
+4.Document (mongodb) 
+ 
+Hierarchy of data 
+Servers  Databases  Schema  Tables 
+ 
+Data types in sql 
+1.numbers (INT, DECIMAL) 
+2.characters (CHAR for fixed length, VARCHAR for variable length) 
+ 
+DDL (data definiƟon language): Create, Alter, Drop (CAD) 
+DML (data manipulaƟon language): Insert, update, delete (IUD) 
+DQL (data query language): Select 
+ 
+TOP 
+Top clause is used to restrict the numbers of rows in the output based on the requirement 
+Syntax: select top 3 * from employee order by salary desc 
+
+ ORDER OF EXECUETION IN SQL 
+From  Where  Group by  Having  Select  order by  Top 
+HOW TO USE DDL COMMANDS 
+CREATE 
+CREATE TABLE PERSON 
+( 
+Id INT NOT NULL, 
+Name VARCHAR(20) NOT NULL, 
+Age INT, 
+Phone no VARCHAR(15) NOT NULL 
+) 
+‘’’NOTE the sequence COLUMN_NAME, DATA TYPE, CONSTRAINT’’’ 
+DDL command will never return the data it is used to define the structure of the database and alter 
+the structure of the database 
+ALTER 
+Adding a column 
+ALTER TABLE person 
+ADD email VARCHAR (50) NOT NULL; 
+ 
+Removing a column 
+ALTER TABLE person 
+DROP COLUMN phone; 
+ 
+This clause is used to change the structure of the table like adding a new column or removing the 
+column changing the constraints and many other things 
+If we add a new column in the table it is added aŌer the last row. 
+ 
+DROP  
+DROP TABLE person; 
+ 
+Drop clause is used to remove the table from the database when a table is not required the records 
+and the structured is completed removed from the database 
+
+DATA MANIPULATION COMMANDS (DML) 
+INSERT 
+Manual way 
+INSERT INTO PERSON (col1,col2,col3..) 
+VALUES (1,’pramod’,20,22311a1976,...) 
+Direct way 
+In this method we directly select the data from a source table and insert into the other table 
+INSERT INTO TABLE person 
+SELECT name,address FROM employee 
+ 
+There is a catch the entries which we enter should synchronize with the child table  
+We can insert mulƟple tuples at a Ɵme note that number of columns is equal to number of entries. If 
+we don’t menƟon these (col1,col2,col3..) SQL will think you are having every column.  
+NOTE: The order of the column name and entries should be same 
+ 
+UPDATE 
+UPDATE person 
+SET name= ‘sanjay’, 
+       Age=21 
+Where id=21 
+ 
+UPDATE person 
+SET country = ‘Unknown’ 
+WHERE country IS NULL 
+ 
+Update clause is used to modify the specified entries of the column of the table based on the user 
+need. This is the structure of the update clause if don’t use where clause unintenƟonally we will be 
+updaƟng all the rows of that column. 
+ 
+DELETE 
+DELETE FROM person 
+WHERE id>5; 
+
+DELETE clause is used to delete the rows from the table based on user needs. If we do not menƟon 
+any condiƟon in the delete all the rows will be deleted this is very dangerous the whole data which is 
+collected will be deleted 
+NOTE: It is best pracƟse to double check and before deleƟng use select to verify what we are deleƟng 
+If we want to delete the whole data in the table  
+The best pracƟse is to use TRUNCATE which is way faster than DELETE which clears the whole table 
+without checking or logging 
+TRUNCATE TABLE person 
+ 
+NOTE: Whether we use TRUNCATE or DELETE to delete whole table just the rows are deleted the 
+table sƟll exists 
+ 
+TYPES OF OPERATORS 
+1.comparision operator (=, !=, <>, >=, <=, >, <) 
+2.logical operator (and, or, not) 
+3.Range operator (Between) the boundaries are inclusive 
+4.Membership operator (in, not in) 
+5.search operator (like)  x% means anything aŌer x it might a empty also 
+ 
+COMBINING THE TABLES  
+If we want to combine the columns, we use JOINS we need to have a key column to combine  
+If we want to combine the rows basically stack up the rows we use SET OPERATORS we need to same 
+number of columns in both tables 
+Why do we use SQL joins 
+1.we use joins to recombine the data (gives a big picture) 
+2.Data enrichment (geƫng extra info into master table from reference table) 
+3.Checking the existence  
+TYPES OF JOINS 
+BASIC TYPES 
+1.Inner join (rows matching from both table the order of table doesn’t really maƩer) 
+2.LeŌ join (All the rows from leŌ table and only the match from right order maƩers) 
+3.Right join (All the rows from right table and only the match from leŌ order maƩers) 
+
+4.Full join (All the rows that match from both tables and all the rows that do not match from both
+          order of the table doesn’t maƩer) 
+NOTE: It is recommended to use leŌ join over right join 
+ADVANCED JOINS 
+5.LEFT ANTI JOIN (All the rows from the leŌ table that do not have match in right table) 
+Here we need to select the only columns that are in leŌ table 
+6.RIGHT ANTI JOIN (All the rows from right table that do not have match in leŌ table) 
+Here we need to select the only columns that are in right table 
+7.FULL ANTI JOIN (It returns all the rows that do not match in both the tables) 
+8.CROSS JOIN (It is used to combine every row from the leŌ and every row from the leŌ in this we do 
+not need any condiƟon) 
+SET OPERATORS 
+The set operators are used to combine the tables in the verƟcal fashion that is stacking the rows of 
+one table on to another table. Here there is a catch that is we don’t need a key column to stack the 
+tables we need to have same columns in both the tables 
+Syntax: 
+(select name from xyz) 
+Set operator 
+(select name from yxz) 
+RULES 
+1.We can use any clause in side the query while using the set operators but the order by clause 
+should be at the end of both queries 
+2.Number of columns should be same 
+3.Data types of columns in each query should be compaƟble 
+4.The order of the columns should be same 
+5.The column names in the result are determined by the first Query 
+6.Be very careful while using the set operators 
+ 
+TYPES OF SET OPERATORS 
+1.UNION: It returns every record from two sets but without duplicates 
+2.UNION ALL: It returns all the records from two sets including duplicates 
+(If you are confident there are no duplicates in both the records we can use union all) 
+3.EXCEPT: It returns the records from first set which are not present in second set 
+
+(Here order of the query maƩers) 
+Delta detecƟon:(Except is used by data engineers to insert new data into data warehouse if there are 
+any duplicates between Datawarehouse and source we will not add) 
+Data completeness: (Except is used in data migraƟon if we are loading a table from one DB to 
+another DB we can use Except to check whether all the records from DB 1 are loaded to DB 2) 
+4.INTERSECT: Intersect will return only records that are common in two set  
+(it will not return duplicates) 
+NOTE: It is recommended to use column names rather than (*), 
+It is also best pracƟse to use a column as source table name which helps to idenƟfy from 
+which table it has came  
+ 
+FUNCTIONS IN SQL 
+FuncƟons in SQL take input/inputs process it and return an answer. 
+1.Simple funcƟons 
+That do only one operaƟon on a row and return the answer 
+Ex: UPPER (name) 
+2.Nested funcƟons 
+That do mulƟple operaƟons on the row/rows and return the output 
+Ex: CONCATENATE (first name,’ ‘, last_name) 
+There are mainly two types of funcƟons 
+1.Single row funcƟon 
+1.String FuncƟon 
+2.Numeric FuncƟon 
+3.Date & Ɵme funcƟon 
+4.Null FuncƟon 
+2.MulƟple row funcƟon 
+1.Aggreate FuncƟons 
+2.Window funcƟon 
+ 
+Basically, understand like single row funcƟon are used to manipulate the data where as mulƟ row 
+funcƟons are used to analysis of data 
+ 
+
+STRING FUNCTIONS 
+ManipulaƟon                                                     
+1.CONCAT  
+It is used to combine mulƟple string into one string Ex: CONCAT(first_name,’ ‘,last_name) 
+2.UPPER  
+UPPER (name)                           
+3.LOWER  
+LOWER (name)                          
+4.TRIM  
+It will trim all white spaces before and aŌer the string Ex: TRIM(name)  
+5.REPLACE 
+It is used to replace a specific character with a new character Ex: REPLACE(column,’-’,’/’) 
+CalculaƟon 
+1.LEN   
+It just counts how many characters are there in the string 
+Substring extracƟon 
+1.LEFT 
+LeŌ is used to extract n number of characters from the starƟng of string Ex: LEFT (name,3) 
+2.RIGHT 
+Right is used to extract n number of characters from the end of the string Ex: RIGHT (name,5) 
+3.SUBSTRING 
+Substring is used to extract specific part of the string like 2 characters aŌer 3 characters 
+Ex:  SUBSTRING (name, starƟng, number of char) 
+       SUBSTRING (name,2,5) 
+ 
+2.Numeric FuncƟon 
+1.ROUND 
+Round funcƟon is used to round up the values of a column Ex: ROUND(height,2) or ROUND(weight) 
+2.ABS 
+ABS converts the -ve or +ve number to +ve number Ex: ABS(-2.1) is 2.1 
+ 
+
+DATE AND TIME FUNCTION 
+GETDATE () is the funcƟon that return date and Ɵme of present, the data type is DATETIME 
+Types of date and Ɵme funcƟons 
+1.Part ExtracƟon 
+1.DAY  
+It is used to extract day from the date Ex: DAY (date)  
+2.MONTH 
+It is used to extract day from the date Ex: MONTH (date) 
+3.YEAR 
+It is used to extract YEAR from the date Ex: YEAR (date) 
+4.DATEPART 
+It has many use cases generally we don’t use much like what is quarter or week or hour or anything 
+from date and Ɵme even year, month and day also 
+Syntax: 
+1.DATEPART (month, date) 
+2.DATEPART (week, date) 
+3.DATEPART (quarter, date) 
+4.DATEPART (hour, date) and many more  
+Note: The above all funcƟons will return integers 
+5.DATENAME 
+It is similar to data part but it will return in the form of strings, it has very less use case 
+1.DATENAME (month, date) it will return like February, March etc  
+2.DATENAME (WEEKDAY, date) it will return like Wednesday, Sunday, Monday etc 
+6.DATETRUNC 
+It has similar structure as date name and date part but the catch is it will truncate every thing upto 
+give input and aŌer it will make all zeros let us understand 
+1.DATETRUNC (month, date)  that means up to the month we will have the will truncate it aŌer it we 
+will have all like 2025-06-10 18:09:20 will become 2025-06-01 00:00:00 
+It does help us in data analysis if we want to group by month or year when we have it in the data 
+Ɵme format 
+7.EOMONTH 
+Syntax: EOMONTH(2025-06-10) is (2025-06-30) It will return the last day of the month it do help us 
+in the analysis NOTE: syntax will take only one input 
+
+1. DAY, MONTH, YEAR, DATEPART will return INT output 
+2. DATENAME returns STRING 
+3. DATETRUNC returns DATETIME 
+4. EOMONTH returns DATE  
+These are the output data types 
+FORMATING  
+It is converƟng one format to another format 
+FORMAT (orderdate,dd-mm-yyyy) 
+Create this format day wed Jan Q1 2025 12:34:56 pm 
+Select  
+‘day ’+ FORMAT(orderdate,ddd mmm)+ ‘Q’+DATEPART(quarter,orderdate)+FORMAT(orderdate,yyyy 
+hh:mm:ss Ʃ) 
+ 
+CASTING  
+It is changing the datatype one to another 
+Syntax: CAST (height as int) 
+ 
+CONVERT 
+It is used for both formaƫng and casƟng 
+CONVERT (varchar,orderdate,32) 
+Hare order date is converted to varchar data type and the format is 32 which means USA standards 
+NOTE: Be clear with the difference between FORMAT, CAST, CONVERT 
+ 
+DATEADD 
+It is used to Add/Sub the days or months or year from the specific date 
+Syntax: DATEADD (part,interval,value) 
+Ex:   DATEADD (month, 3,2021-01-01) will return 2021-04-01 this is for adding 
+Ex:   DATEADD(day,-4,2021-03-24) will return 2021-03-20 this is for subtracƟng 
+ 
+DATEDIFF 
+It is used to find the difference between two dates 
+Syntax: DATEDIFF (month, start_date, end_date) 
+
+Ex:   DATEDIFF (month,2020-01-01,2021-01-01) it will return 12 
+Ex:   DATEDIFF (year,2021-01-21,2025-06-11) it will return 4  
+Ex:   DATEDIFF (day,2021-01-21,2021-02-01) it will return 10 days 
+ 
+ISDATE 
+ISDATE is used to check whether the give date is valid date or not it will return 1 if it is True else False 
+Ex:   ISDATE (‘2022-08-22’) returns 1 
+    ISDATE (‘2022’) return 1 
+    ISDATE (‘2022-08’) return 0 
+    ISDATE (‘991’) return 0 
+ 
+NULL 
+Null means nothing or empty that is the data is not filled in that table 
+There are many ways to handle Null values 
+1.ISNULL  
+Syntax: ISNULL(p1,p2) 
+Similar to COALESCE but it takes only two parameters  
+If first parameter is Null it will return second, if it is not null, if it is also NULL then we will get 
+Null as the output 
+NOTE: There is no space between in IS and NULL it is ISNULL  
+2.COALESCE   
+It will return the next value if the current value is NULL there is restricƟon on the number of 
+parameters it should hold 
+Syntax: COALESCE (p1, p2, p3, .....) 
+We can put a default at the end if all are NULL the it will be added  
+Note: COALESCE AND ISNULL are used to handle the null values before aggregaƟon 
+ 
+3.NULLIF 
+It takes two parameters if both parameters are same, it will return NULL 
+Syntax: NULLIF (p1, p2)    The common use case is to eradicate the divide by 0 
+
+4.IS NULL 
+We generally apply it in the in where clause to check whether it is NULL or not if it is NULL then it will 
+return True else False. The opposite to it is (IS NOT NULL)  
+ 
+DIFFERENCE BETWEEN NULL, EMPTY STRING AND BLANK SPACES 
+Null consumes very minimal memory compared to Empty string or Blank spaces, Nulls 
+opƟmize the storage and improve the performance of the Query 
+If we want to find out where is null, we use IS NULL, if we want to find blank or empty strings 
+we use comparison operator =” or =’  ‘ 
+It is easy to find an empty string but how to find the blanks, here we use TRIM funcƟon that 
+help us to find out all the blanks 
+ 
+DATA POLICY 
+1.Only use NULLS and Empty string not blank spaces 
+2.Only use NULLS not the Empty strings nor the blank spaces 
+3.Use only a default values as UNKNOWN avoid using NULLS, empty strings and Blank spaces 
+ 
+CASE STATEMENTS 
+1.Case statements are used to categorize the data 
+NOTE: The datatypes of result must be matching 
+We can use Quick form case statement when we are using only one column  
+Syntax: CASE country 
+    WHEN ‘India’ THEN ‘IN’ 
+    WHEN ‘Japan’ THEN ‘JP’ 
+    ELSE ‘n/a’ 
+    END as Country_code 
+ 
+WINDOW FUNCTIONS 
+It has mainly three components 
+(ParƟƟon by)  (Order by) (Frame) that is  rows between unbounded preceding and unbounded 
+following                      
+                                                                                                                                                                                                                       
+
+RULES: 
+1.window funcƟons are only used in SELECT and ORDER BY only 
+2.Nested window funcƟons are not allowed 
+3.Window funcƟons will be executed aŌer the WHERE clause 
+4.We can use window funcƟon with group by but one condiƟon is, what ever the column we 
+are using should be a part of window funcƟon 
+ 
+COUNT () 
+It is recommended to use column name in COUNT window funcƟon 
+It allows any data type 
+It is used to find out duplicates in the table 
+RUNNING TOTAL V/S ROLLING TOTAL 
+1.Running totals are used to aggregate all the rows Ɵll the current row without dropping any 
+data 
+Running total 
+1) SELECT *, SUM (sales) OVER (rows between unbounded preceding and current row) 
+2.Rolling totals are used to aggregate all the rows with a specific window that drops out 
+some data points 
+2) SELECT *, SUM(sales) OVER (rows between 2 preceding and current row) 
+ 
+MOVING AVERAGE  
+It can be calculated using puƫng ORDER BY clause in the AVG window funcƟon 
+ 
+ROLLING AVERAGE 
+It is used calculate the average inside a window  
+ 
+RANKING FUNCTIONS 
+Frame Clauses are not allowed in the ranking funcƟons 
+ 
+ 
+
+CUME DIST () 
+How we calculate CUME DIST  = current pointer/ number of total rows  
+If their any mulƟple records we take the last appearance as the pointer 
+ 
+PERCENT_RANK () 
+It is calculated as PERCENT_RANK = current pointer-1/number of total rows-1 
+If their any mulƟple records we take the first appearance as the pointer 
+ 
+LEAD V/S LAG 
+In lead the last row will be NULL 
+In lag the first row will be NULL 
+Syntax: LEAD(column_name,next_pointer,if null replace) 
+Ex: LEAD (sales, 2, 0) 
+What it means is lead of sales 2 preceding to the current and if not exist replace NULL with 0 
+ 
+FIRST_VALUE V/S LAST_VALUE 
+In last value by default it is rows between unbounded preceding and current row 
+So, we should make it ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING 
+Or by twisƟng a bit we could get last_value by using first_value  
+ 
+SUB QUERY 
+A query inside a query is known as sub-Query. 
+1.Result types 
+1.single values 
+2.rows 
+3.table 
+We could use sub-query with WHERE clause with comparison operators or logical operators 
+like IN, ANY, ALL, EXISTS 
+ 
+ 
+
+ANY 
+Any is the powerful operator used in WHERE clause that is  
+If we need to find the female employees whose salary is greater than ANY male employee 
+SELECT id,name,salary 
+From employee  
+where gender=’F’ and salary>any(select salary  from employee where gender=’M’) 
+ALL 
+It is used in WHERE clause like 
+If we want the female employees whose salary is greater than all male employees  
+ 
+NON-CORRELATED SUBQUERY 
+A non-correlated subquery as the name suggest the query is independent of outer query 
+Ex: select the students who got more than average score of all students 
+SELECT id, name 
+From students 
+Where score>(select avg(score) from students) 
+ 
+CORRELATED SUBQUERY 
+A correlated subquery is dependent on the main query  
+Ex: Write a SQL query to find the names of students whose marks are greater than the average 
+marks of their respecƟve class. 
+ 
+CTE  
+1.Reusability 
+2.Readability 
+How CTES are executed as we create the CTES they are placed in Cache memory not in the 
+Disk or main memory 
+TYPES of CTES 
+1.Non-Recursive CTE  
+    Standalone CTE: That do not depend upon any other CTE 
+    Nested CTE: That depend on other CTE 
+
+2.Recursive CTE 
+In Recursive CTES we can handle how many Ɵmes recursion should be done  
+By using OPTION (MAXRECURSION 20) this should be used in main query 
+ 
+NOTE: Order by is not used CTE 
+ 
+VIEWS 
+A virtual table that is based on a result of a query and not stored in the DATABASE 
+So, whenever we use the VIEW, the query related to the View will be executed that fetches 
+the data from the Data base and result will be show as view 
+How to create a view 
+CREATE VIEW monthly_summary as 
+(........................... 
+.............................) 
+ 
+Database ----- view (virtual table) ----- User 
+Views are very Slow, they are Read only 
+Views persist Logic not the table 
+When we drop the View only the query related to the view will be deleted not the actual 
+data 
+Note: Views are stored in Catalog   
+ 
+USES OF VIEWS 
+1.They store Central complex logic in the database that is used for querying further 
+2.Views provide row-level and column-level security 
+3.It is recommended to use views to implement DataMart’s  
+4.SomƟmes views are beƩer than Cte’s because cte’s allow only one query but views allow 
+mulƟ querying  
+ 
+ 
+
+ 
+ 
+ 
+DATABASE TABLES 
+Tables are stored in the database files which are stored in the Disk 
+There are two types of tables  
+1.Permanent Tables 
+ 1.1 using Create and Insert (Here we create a table from the scratch) 
+ 1.2 Using CTAS (create table as select Here we create a new table and store in DB) 
+2.Temporary Tables 
+ 
+CTAS SYNTAX 
+Create Table table_name as  
+( 
+
+Select ... 
+From where ... 
+Group by 
+) 
+How we can update CTAS 
+DROP table ctas_name if exists 
+Create table ctas_name as 
+( 
+Select... 
+) 
+ 
+DIFFERENCE IN CTAS AND VIEWS 
+1.CTAS are faster compared to Views 
+2.CTAS do not provide the flexibility when data is manipulated  
+USES 
+CTAS are used to create a snapshot of the table with out effect the original data and do 
+manipulaƟon on it 
+ 
+ 
+TEMPORARY TABLES 
+Temporary tables are similar to CTAS but the difference is CTAS are permanent where as 
+Temporary Tables are not permanent when the session  gets ended all the temporary tables 
+will be deleted from the Temp storage 
+ 
+
+ 
+ 
+INDEXES 
+Index is a Data structure that provide us quick access to data, opƟmizes the speed of the 
+query 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+HOW TO USE AI IN SQL 
+Mostly do it yourself use AI for assistance  
+There are two players Chatgpt and github both are trained on same model that is gpt’s 
+model 
+Chatgpt 
+1.Chatgpt is a standalone applicaƟon  
+2.Here it is all about conversaƟon 
+Copilot 
+1.Copilot is directly integrated with IDE’s that is code editors 
+2.mostly for soŌware development 
+ 
+ Ghost text 
+Auto compleƟon text by the co-pilot if we want whole text we press TAB 
+If we want up to some we press ctrl right arrow Ɵll we reach to that point 
+ 
+Coding with AI 
+
+1. Generally, we write code directly, while using co-pilot or any AI tool we can actually 
+write comment of that code that will provide ghost code then press Ctrl+ enter we 
+will all the suggesƟons for that code 
+2. To interact with AI while coding or to ask for assist just press ctrl + l we will get a tab 
+just type what you need with database it will return the code 
+3. If there is any error it is highlighted with red line we can hover over it and co-pilot 
+can explain the code or fix the code 
+4. If something goes wrong we see a sparkle on the leŌ side of code editor that will tell 
+us co-pilot can help us here 
+While using GPT just make the prompt very structured and make it very clear what you need 
+Use of chatgpt  
+1.For solving a query but we need to give the context about database 
+2.Improve the readability remove redundancy and adding important comments, here we 
+need to one more thing that is to explain each improvement for what has changed in the 
+code 
+3.OpƟmizing the performance of the query 
+4.Their might some code bases where can’t understand the execuƟon plan, we can by using 
+GPT and opƟmize it 
+5. We can debug the query if there is any error message, understand the root cause and fix 
+the error with the help of the gpt 
+6.SomeƟmes we don’t understand the result of the query their might some ambiguiƟes that 
+can understood by understanding the result of the query (basically understanding the 
+recursive Ctes) 
+7.There might be some cases the readability of the code is very bad so we change styling and 
+formaƫng of the code that help use to understand 
+8. While working in a organizaƟon we work with many people so DocumentaƟon and 
+comments are very important to add that help us to understand code base (add only 
+comments that are very important and give a good structure) 
+9.We can improve the DDL commands 
+10.GeneraƟng Test datasets for running the query here we need to give the DDL at the end 
+11.MigraƟng the query from one database to other 
+There are many use cases with AI assisƟng with learning, comparing and interviewing for 
+ones 
+NOTE: While using the above use cases with AI use proper statements that will ease your 
+task

@@ -11,6 +11,7 @@ import Tasks from './pages/Tasks';
 import Schedule from './pages/Schedule';
 import StressTracking from './pages/StressTracking';
 import Chatbot from './pages/Chatbot';
+import Resources from './pages/Resources';
 import Profile from './pages/Profile';
 
 function AppRoutes() {
@@ -57,6 +58,14 @@ function AppRoutes() {
         element={
           <ProtectedRoute>
             <Chatbot />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/resources"
+        element={
+          <ProtectedRoute>
+            <Resources />
           </ProtectedRoute>
         }
       />
