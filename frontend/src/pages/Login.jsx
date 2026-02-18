@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import Logo from '../components/common/Logo';
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -30,7 +31,9 @@ const Login = () => {
       <div className="card bg-base-100 shadow-2xl w-full max-w-md">
         <div className="card-body">
           <div className="text-center mb-6">
-            <h1 className="text-3xl font-bold text-base-content">Time-Split</h1>
+            <div className="flex justify-center">
+              <Logo />
+            </div>
             <p className="mt-2 text-base-content/70">Sign in to your account</p>
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">

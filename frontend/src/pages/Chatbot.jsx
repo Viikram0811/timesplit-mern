@@ -1,9 +1,12 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Layout from '../components/common/Layout';
 import chatService from '../services/chatService';
 import toast from 'react-hot-toast';
+import { useAuth } from '../context/AuthContext';
+import Logo from '../components/common/Logo';
 
 const Chatbot = () => {
+  const { user } = useAuth();
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -13,18 +16,23 @@ const Chatbot = () => {
     loadHistory();
   }, []);
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
-
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToBottom = (behavior = 'smooth') => {
+    messagesEndRef.current?.scrollIntoView({ behavior, block: 'end' });
   };
+
+  const userInitial = useMemo(() => {
+    const name = user?.name?.trim();
+    if (!name) return 'U';
+    return name[0]?.toUpperCase() || 'U';
+  }, [user?.name]);
+
+  const aiInitial = 'TS';
 
   const loadHistory = async () => {
     try {
       const response = await chatService.getChatHistory();
       setMessages(response.messages || []);
+      requestAnimationFrame(() => scrollToBottom('auto'));
     } catch (error) {
       toast.error('Failed to load chat history');
     }
@@ -41,10 +49,12 @@ const Chatbot = () => {
     // Add user message immediately
     const newMessages = [...messages, { role: 'user', content: userMessage }];
     setMessages(newMessages);
+    requestAnimationFrame(() => scrollToBottom('smooth'));
 
     try {
       const response = await chatService.sendMessage(userMessage);
       setMessages(response.chatHistory);
+      requestAnimationFrame(() => scrollToBottom('smooth'));
       
       // Check if response indicates rate limit
       if (response.response && response.response.includes('Rate limit')) {
@@ -73,6 +83,7 @@ const Chatbot = () => {
         await chatService.clearChatHistory();
         setMessages([]);
         toast.success('Chat history cleared');
+        requestAnimationFrame(() => scrollToBottom('auto'));
       } catch (error) {
         toast.error('Failed to clear chat history');
       }
@@ -80,25 +91,55 @@ const Chatbot = () => {
   };
 
   return (
-    <Layout>
-      <div className="flex flex-col h-[calc(100vh-8rem)]">
-        <div className="flex justify-between items-center mb-4">
-          <h1 className="text-3xl font-bold text-base-content">AI Chatbot</h1>
-          <button
-            onClick={handleClear}
-            className="btn btn-ghost"
-          >
-            Clear History
-          </button>
-        </div>
+    <Layout scroll={false}>
+      <div className="h-full flex flex-col">
+        <div className="card bg-base-100 shadow-xl flex-1 min-h-0 flex flex-col overflow-hidden">
+          <div className="flex items-center justify-between gap-3 p-4 border-b border-base-300">
+            <div className="flex items-center gap-3 min-w-0">
+              <Logo compact />
+              <div className="min-w-0">
+                <div className="font-semibold tracking-tight">AI Assistant</div>
+                <div className="text-xs text-base-content/60 truncate">
+                  Gemini · Personalized with your resources
+                </div>
+              </div>
+              <span className="badge badge-outline hidden sm:inline-flex">Premium</span>
+            </div>
+            <button onClick={handleClear} className="btn btn-ghost btn-sm">
+              Clear
+            </button>
+          </div>
 
-        <div className="card bg-base-100 shadow-xl flex-1 flex flex-col">
-          {/* Messages */}
-          <div className="card-body flex-1 overflow-y-auto">
+          <div className="flex-1 min-h-0 overflow-y-auto p-4">
             {messages.length === 0 ? (
-              <div className="text-center text-base-content/70 py-12">
-                <p className="text-lg mb-2">👋 Hello! I'm your AI study assistant.</p>
-                <p>Ask me anything about your studies, schedule, or academic goals!</p>
+              <div className="h-full flex items-center justify-center">
+                <div className="max-w-xl w-full text-center">
+                  <div className="flex justify-center mb-4">
+                    <Logo />
+                  </div>
+                  <h2 className="text-xl font-semibold">Ask anything. Get a plan.</h2>
+                  <p className="mt-2 text-base-content/70">
+                    Upload PDFs in Resources, then ask questions here. I’ll answer using your material and format it clearly.
+                  </p>
+                  <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+                    <div className="card bg-base-200 border border-base-300">
+                      <div className="card-body p-4">
+                        <div className="text-sm font-medium">Explain a concept</div>
+                        <div className="text-xs text-base-content/70 mt-1">
+                          “Summarize photosynthesis from my PDF as bullet points.”
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card bg-base-200 border border-base-300">
+                      <div className="card-body p-4">
+                        <div className="text-sm font-medium">Make a schedule</div>
+                        <div className="text-xs text-base-content/70 mt-1">
+                          “Plan 7 days for calculus with 2 hours/day.”
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             ) : (
               <div className="space-y-4">
@@ -107,18 +148,43 @@ const Chatbot = () => {
                     key={index}
                     className={`chat ${message.role === 'user' ? 'chat-end' : 'chat-start'}`}
                   >
-                    <div className={`chat-bubble ${
-                      message.role === 'user' ? 'chat-bubble-primary' : 'chat-bubble-base-300'
-                    }`}>
-                      <p className="whitespace-pre-wrap">{message.content}</p>
+                    <div className="chat-image avatar placeholder">
+                      <div
+                        className={[
+                          'w-9 rounded-full',
+                          message.role === 'user'
+                            ? 'bg-base-200 text-base-content'
+                            : 'bg-primary text-primary-content',
+                        ].join(' ')}
+                      >
+                        <span className="text-xs font-semibold">
+                          {message.role === 'user' ? userInitial : aiInitial}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={[
+                        'chat-bubble whitespace-pre-wrap',
+                        message.role === 'user'
+                          ? 'chat-bubble-primary'
+                          : 'chat-bubble-base-200 border border-base-300',
+                      ].join(' ')}
+                    >
+                      {message.content}
                     </div>
                   </div>
                 ))}
               </div>
             )}
+
             {loading && (
-              <div className="chat chat-start">
-                <div className="chat-bubble chat-bubble-base-300">
+              <div className="chat chat-start mt-4">
+                <div className="chat-image avatar placeholder">
+                  <div className="w-9 rounded-full bg-primary text-primary-content">
+                    <span className="text-xs font-semibold">{aiInitial}</span>
+                  </div>
+                </div>
+                <div className="chat-bubble chat-bubble-base-200 border border-base-300">
                   <span className="loading loading-dots loading-md"></span>
                 </div>
               </div>
@@ -126,14 +192,13 @@ const Chatbot = () => {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input */}
-          <div className="card-body border-t border-base-300 pt-4">
+          <div className="p-4 border-t border-base-300 bg-base-100">
             <form onSubmit={handleSend} className="flex gap-2">
               <input
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Type your message..."
+                placeholder="Ask a question, or request a study plan…"
                 className="input input-bordered flex-1"
                 disabled={loading}
               />
@@ -142,13 +207,12 @@ const Chatbot = () => {
                 disabled={loading || !input.trim()}
                 className="btn btn-primary"
               >
-                {loading ? (
-                  <span className="loading loading-spinner"></span>
-                ) : (
-                  'Send'
-                )}
+                {loading ? <span className="loading loading-spinner"></span> : 'Send'}
               </button>
             </form>
+            <div className="mt-2 text-xs text-base-content/60">
+              Tip: For best answers, mention the PDF/topic name and what format you want (bullets, steps, flashcards).
+            </div>
           </div>
         </div>
       </div>

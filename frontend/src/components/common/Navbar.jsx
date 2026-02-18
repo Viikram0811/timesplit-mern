@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import Logo from './Logo';
 
 const Navbar = ({ onMenuClick }) => {
   const { user, logout } = useAuth();
@@ -14,8 +15,8 @@ const Navbar = ({ onMenuClick }) => {
         </label>
       </div>
       <div className="flex-1">
-        <Link to="/dashboard" className="btn btn-ghost text-xl">
-          Time-Split
+        <Link to="/dashboard" className="btn btn-ghost px-2">
+          <Logo />
         </Link>
       </div>
       <div className="flex-none gap-2">
