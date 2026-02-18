@@ -67,7 +67,7 @@ const Profile = () => {
     return (
       <Layout>
         <div className="flex items-center justify-center h-64">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+          <span className="loading loading-spinner loading-lg"></span>
         </div>
       </Layout>
     );
@@ -76,96 +76,111 @@ const Profile = () => {
   return (
     <Layout>
       <div className="max-w-3xl mx-auto space-y-6">
-        <h1 className="text-3xl font-bold text-gray-900">Profile Settings</h1>
+        <h1 className="text-3xl font-bold text-base-content">Profile Settings</h1>
 
-        <div className="bg-white rounded-lg shadow p-6">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-              <input
-                type="text"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
-              />
-            </div>
+        <div className="card bg-base-100 shadow-xl">
+          <div className="card-body">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text font-semibold">Name</span>
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="input input-bordered w-full"
+                  placeholder="Enter your name"
+                />
+              </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Academic Goals</label>
-              <textarea
-                value={formData.academicGoals}
-                onChange={(e) => setFormData({ ...formData, academicGoals: e.target.value })}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
-                rows="4"
-                placeholder="Describe your academic goals..."
-              />
-            </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text font-semibold">Academic Goals</span>
+                </label>
+                <textarea
+                  value={formData.academicGoals}
+                  onChange={(e) => setFormData({ ...formData, academicGoals: e.target.value })}
+                  className="textarea textarea-bordered w-full"
+                  rows="4"
+                  placeholder="Describe your academic goals..."
+                />
+              </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Available Study Hours Per Day: {formData.availableHoursPerDay} hours
-              </label>
-              <input
-                type="range"
-                min="1"
-                max="24"
-                value={formData.availableHoursPerDay}
-                onChange={(e) => setFormData({ ...formData, availableHoursPerDay: parseInt(e.target.value) })}
-                className="w-full"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Preferred Time Slots</label>
-              <div className="space-y-3">
-                {formData.preferredTimeSlots.map((slot, index) => (
-                  <div key={index} className="flex items-center space-x-2 p-2 bg-gray-50 rounded">
-                    <span className="flex-1">
-                      {slot.start} - {slot.end}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => handleRemoveTimeSlot(index)}
-                      className="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 text-sm"
-                    >
-                      Remove
-                    </button>
-                  </div>
-                ))}
-                <div className="flex space-x-2">
-                  <input
-                    type="time"
-                    value={newSlot.start}
-                    onChange={(e) => setNewSlot({ ...newSlot, start: e.target.value })}
-                    className="px-3 py-2 border border-gray-300 rounded-md"
-                    placeholder="Start time"
-                  />
-                  <input
-                    type="time"
-                    value={newSlot.end}
-                    onChange={(e) => setNewSlot({ ...newSlot, end: e.target.value })}
-                    className="px-3 py-2 border border-gray-300 rounded-md"
-                    placeholder="End time"
-                  />
-                  <button
-                    type="button"
-                    onClick={handleAddTimeSlot}
-                    className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700"
-                  >
-                    Add Slot
-                  </button>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text font-semibold">
+                    Available Study Hours Per Day: {formData.availableHoursPerDay} hours
+                  </span>
+                </label>
+                <input
+                  type="range"
+                  min="1"
+                  max="24"
+                  value={formData.availableHoursPerDay}
+                  onChange={(e) => setFormData({ ...formData, availableHoursPerDay: parseInt(e.target.value) })}
+                  className="range range-primary"
+                />
+                <div className="w-full flex justify-between text-xs px-2">
+                  <span>1</span>
+                  <span>12</span>
+                  <span>24</span>
                 </div>
               </div>
-            </div>
 
-            <button
-              type="submit"
-              className="w-full px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700"
-            >
-              Save Profile
-            </button>
-          </form>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text font-semibold">Preferred Time Slots</span>
+                </label>
+                <div className="space-y-3">
+                  {formData.preferredTimeSlots.map((slot, index) => (
+                    <div key={index} className="flex items-center gap-2 p-3 bg-base-200 rounded-lg">
+                      <span className="flex-1 font-medium">
+                        {slot.start} - {slot.end}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => handleRemoveTimeSlot(index)}
+                        className="btn btn-sm btn-error"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  ))}
+                  <div className="flex gap-2">
+                    <input
+                      type="time"
+                      value={newSlot.start}
+                      onChange={(e) => setNewSlot({ ...newSlot, start: e.target.value })}
+                      className="input input-bordered flex-1"
+                      placeholder="Start time"
+                    />
+                    <input
+                      type="time"
+                      value={newSlot.end}
+                      onChange={(e) => setNewSlot({ ...newSlot, end: e.target.value })}
+                      className="input input-bordered flex-1"
+                      placeholder="End time"
+                    />
+                    <button
+                      type="button"
+                      onClick={handleAddTimeSlot}
+                      className="btn btn-primary"
+                    >
+                      Add Slot
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="form-control mt-6">
+                <button type="submit" className="btn btn-primary w-full">
+                  Save Profile
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </Layout>

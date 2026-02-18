@@ -98,22 +98,22 @@ const Tasks = () => {
     });
   };
 
-  const getPriorityColor = (priority) => {
+  const getPriorityBadge = (priority) => {
     switch (priority) {
-      case 'Critical': return 'bg-red-100 text-red-800';
-      case 'High': return 'bg-orange-100 text-orange-800';
-      case 'Medium': return 'bg-yellow-100 text-yellow-800';
-      case 'Low': return 'bg-blue-100 text-blue-800';
-      default: return 'bg-gray-100 text-gray-800';
+      case 'Critical': return 'badge-error';
+      case 'High': return 'badge-warning';
+      case 'Medium': return 'badge-info';
+      case 'Low': return 'badge-success';
+      default: return 'badge-ghost';
     }
   };
 
-  const getStatusColor = (status) => {
+  const getStatusBadge = (status) => {
     switch (status) {
-      case 'Completed': return 'bg-green-100 text-green-800';
-      case 'In Progress': return 'bg-blue-100 text-blue-800';
-      case 'Pending': return 'bg-gray-100 text-gray-800';
-      default: return 'bg-red-100 text-red-800';
+      case 'Completed': return 'badge-success';
+      case 'In Progress': return 'badge-info';
+      case 'Pending': return 'badge-ghost';
+      default: return 'badge-error';
     }
   };
 
@@ -121,14 +121,14 @@ const Tasks = () => {
     <Layout>
       <div className="space-y-6">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-gray-900">Tasks</h1>
+          <h1 className="text-3xl font-bold text-base-content">Tasks</h1>
           <button
             onClick={() => {
               resetForm();
               setEditingTask(null);
               setShowModal(true);
             }}
-            className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700"
+            className="btn btn-primary"
           >
             + Add Task
           </button>
@@ -136,160 +136,182 @@ const Tasks = () => {
 
         {loading ? (
           <div className="flex items-center justify-center h-64">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+            <span className="loading loading-spinner loading-lg"></span>
           </div>
         ) : (
-          <div className="bg-white rounded-lg shadow overflow-hidden">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Title</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Subject</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Priority</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Deadline</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {tasks.map((task) => (
-                  <tr key={task._id}>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{task.title}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{task.subject}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <span className={`px-2 py-1 text-xs font-semibold rounded-full ${getPriorityColor(task.priority)}`}>
-                        {task.priority}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {format(new Date(task.deadline), 'MMM dd, yyyy')}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <span className={`px-2 py-1 text-xs font-semibold rounded-full ${getStatusColor(task.status)}`}>
-                        {task.status}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium space-x-2">
-                      {task.status !== 'Completed' && (
-                        <button
-                          onClick={() => handleComplete(task)}
-                          className="text-green-600 hover:text-green-900"
-                        >
-                          Complete
-                        </button>
-                      )}
-                      <button
-                        onClick={() => handleEdit(task)}
-                        className="text-primary-600 hover:text-primary-900"
-                      >
-                        Edit
-                      </button>
-                      <button
-                        onClick={() => handleDelete(task._id)}
-                        className="text-red-600 hover:text-red-900"
-                      >
-                        Delete
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="card bg-base-100 shadow-xl">
+            <div className="card-body p-0">
+              <div className="overflow-x-auto">
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Subject</th>
+                      <th>Priority</th>
+                      <th>Deadline</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {tasks.map((task) => (
+                      <tr key={task._id}>
+                        <td className="font-semibold">{task.title}</td>
+                        <td>{task.subject}</td>
+                        <td>
+                          <span className={`badge ${getPriorityBadge(task.priority)}`}>
+                            {task.priority}
+                          </span>
+                        </td>
+                        <td>{format(new Date(task.deadline), 'MMM dd, yyyy')}</td>
+                        <td>
+                          <span className={`badge ${getStatusBadge(task.status)}`}>
+                            {task.status}
+                          </span>
+                        </td>
+                        <td>
+                          <div className="flex gap-2">
+                            {task.status !== 'Completed' && (
+                              <button
+                                onClick={() => handleComplete(task)}
+                                className="btn btn-sm btn-success"
+                              >
+                                Complete
+                              </button>
+                            )}
+                            <button
+                              onClick={() => handleEdit(task)}
+                              className="btn btn-sm btn-primary"
+                            >
+                              Edit
+                            </button>
+                            <button
+                              onClick={() => handleDelete(task._id)}
+                              className="btn btn-sm btn-error"
+                            >
+                              Delete
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         )}
 
         {/* Modal */}
-        {showModal && (
-          <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white rounded-lg p-6 max-w-md w-full">
-              <h2 className="text-xl font-bold mb-4">{editingTask ? 'Edit Task' : 'Create Task'}</h2>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Title</label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.title}
-                    onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Subject</label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.subject}
-                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Description</label>
-                  <textarea
-                    value={formData.description}
-                    onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                    rows="3"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Priority</label>
-                  <select
-                    value={formData.priority}
-                    onChange={(e) => setFormData({ ...formData, priority: e.target.value })}
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                  >
-                    <option value="Low">Low</option>
-                    <option value="Medium">Medium</option>
-                    <option value="High">High</option>
-                    <option value="Critical">Critical</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Deadline</label>
-                  <input
-                    type="date"
-                    required
-                    value={formData.deadline}
-                    onChange={(e) => setFormData({ ...formData, deadline: e.target.value })}
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Estimated Time (minutes)</label>
-                  <input
-                    type="number"
-                    required
-                    min="1"
-                    value={formData.estimatedTime}
-                    onChange={(e) => setFormData({ ...formData, estimatedTime: e.target.value })}
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                  />
-                </div>
-                <div className="flex space-x-3">
-                  <button
-                    type="submit"
-                    className="flex-1 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700"
-                  >
-                    {editingTask ? 'Update' : 'Create'}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setShowModal(false);
-                      setEditingTask(null);
-                      resetForm();
-                    }}
-                    className="flex-1 px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              </form>
-            </div>
+        <dialog className={`modal ${showModal ? 'modal-open' : ''}`}>
+          <div className="modal-box">
+            <h3 className="font-bold text-lg mb-4">{editingTask ? 'Edit Task' : 'Create Task'}</h3>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Title</span>
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={formData.title}
+                  onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+                  className="input input-bordered w-full"
+                  placeholder="Enter task title"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Subject</span>
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={formData.subject}
+                  onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                  className="input input-bordered w-full"
+                  placeholder="Enter subject"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Description</span>
+                </label>
+                <textarea
+                  value={formData.description}
+                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                  className="textarea textarea-bordered w-full"
+                  rows="3"
+                  placeholder="Enter description"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Priority</span>
+                </label>
+                <select
+                  value={formData.priority}
+                  onChange={(e) => setFormData({ ...formData, priority: e.target.value })}
+                  className="select select-bordered w-full"
+                >
+                  <option value="Low">Low</option>
+                  <option value="Medium">Medium</option>
+                  <option value="High">High</option>
+                  <option value="Critical">Critical</option>
+                </select>
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Deadline</span>
+                </label>
+                <input
+                  type="date"
+                  required
+                  value={formData.deadline}
+                  onChange={(e) => setFormData({ ...formData, deadline: e.target.value })}
+                  className="input input-bordered w-full"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Estimated Time (minutes)</span>
+                </label>
+                <input
+                  type="number"
+                  required
+                  min="1"
+                  value={formData.estimatedTime}
+                  onChange={(e) => setFormData({ ...formData, estimatedTime: e.target.value })}
+                  className="input input-bordered w-full"
+                  placeholder="Enter estimated time"
+                />
+              </div>
+              <div className="modal-action">
+                <button type="submit" className="btn btn-primary">
+                  {editingTask ? 'Update' : 'Create'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowModal(false);
+                    setEditingTask(null);
+                    resetForm();
+                  }}
+                  className="btn"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
           </div>
-        )}
+          <form method="dialog" className="modal-backdrop">
+            <button onClick={() => {
+              setShowModal(false);
+              setEditingTask(null);
+              resetForm();
+            }}>close</button>
+          </form>
+        </dialog>
       </div>
     </Layout>
   );

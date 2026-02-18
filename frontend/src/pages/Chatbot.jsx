@@ -83,49 +83,43 @@ const Chatbot = () => {
     <Layout>
       <div className="flex flex-col h-[calc(100vh-8rem)]">
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-3xl font-bold text-gray-900">AI Chatbot</h1>
+          <h1 className="text-3xl font-bold text-base-content">AI Chatbot</h1>
           <button
             onClick={handleClear}
-            className="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700"
+            className="btn btn-ghost"
           >
             Clear History
           </button>
         </div>
 
-        <div className="flex-1 bg-white rounded-lg shadow overflow-hidden flex flex-col">
+        <div className="card bg-base-100 shadow-xl flex-1 flex flex-col">
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-6 space-y-4">
+          <div className="card-body flex-1 overflow-y-auto">
             {messages.length === 0 ? (
-              <div className="text-center text-gray-500 py-12">
+              <div className="text-center text-base-content/70 py-12">
                 <p className="text-lg mb-2">👋 Hello! I'm your AI study assistant.</p>
                 <p>Ask me anything about your studies, schedule, or academic goals!</p>
               </div>
             ) : (
-              messages.map((message, index) => (
-                <div
-                  key={index}
-                  className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
-                >
+              <div className="space-y-4">
+                {messages.map((message, index) => (
                   <div
-                    className={`max-w-3xl rounded-lg px-4 py-2 ${
-                      message.role === 'user'
-                        ? 'bg-primary-600 text-white'
-                        : 'bg-gray-100 text-gray-900'
-                    }`}
+                    key={index}
+                    className={`chat ${message.role === 'user' ? 'chat-end' : 'chat-start'}`}
                   >
-                    <p className="whitespace-pre-wrap">{message.content}</p>
+                    <div className={`chat-bubble ${
+                      message.role === 'user' ? 'chat-bubble-primary' : 'chat-bubble-base-300'
+                    }`}>
+                      <p className="whitespace-pre-wrap">{message.content}</p>
+                    </div>
                   </div>
-                </div>
-              ))
+                ))}
+              </div>
             )}
             {loading && (
-              <div className="flex justify-start">
-                <div className="bg-gray-100 rounded-lg px-4 py-2">
-                  <div className="flex space-x-2">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-                  </div>
+              <div className="chat chat-start">
+                <div className="chat-bubble chat-bubble-base-300">
+                  <span className="loading loading-dots loading-md"></span>
                 </div>
               </div>
             )}
@@ -133,25 +127,29 @@ const Chatbot = () => {
           </div>
 
           {/* Input */}
-          <form onSubmit={handleSend} className="border-t border-gray-200 p-4">
-            <div className="flex space-x-2">
+          <div className="card-body border-t border-base-300 pt-4">
+            <form onSubmit={handleSend} className="flex gap-2">
               <input
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Type your message..."
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+                className="input input-bordered flex-1"
                 disabled={loading}
               />
               <button
                 type="submit"
                 disabled={loading || !input.trim()}
-                className="px-6 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="btn btn-primary"
               >
-                Send
+                {loading ? (
+                  <span className="loading loading-spinner"></span>
+                ) : (
+                  'Send'
+                )}
               </button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </Layout>
