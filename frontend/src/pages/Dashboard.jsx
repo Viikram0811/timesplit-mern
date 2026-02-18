@@ -4,6 +4,8 @@ import dashboardService from '../services/dashboardService';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { format } from 'date-fns';
 import toast from 'react-hot-toast';
+import SplitText from '../components/reactbits/SplitText';
+import FadeInStagger from '../components/reactbits/FadeInStagger';
 
 const Dashboard = () => {
   const [dashboardData, setDashboardData] = useState(null);
@@ -57,10 +59,20 @@ const Dashboard = () => {
   return (
     <Layout>
       <div className="space-y-6">
-        <h1 className="text-3xl font-bold text-base-content">Dashboard</h1>
+        <SplitText
+          text="Dashboard Overview"
+          as="h1"
+          className="text-3xl font-bold text-base-content"
+          delay={35}
+          duration={0.7}
+        />
 
         {/* Stats Grid */}
-        <div className="stats stats-vertical lg:stats-horizontal shadow w-full">
+        <FadeInStagger
+          as="div"
+          className="stats stats-vertical lg:stats-horizontal shadow w-full bg-base-100"
+          delay={0.1}
+        >
           <div className="stat">
             <div className="stat-title">Total Tasks</div>
             <div className="stat-value text-primary">{dashboardData.completionStats.total}</div>
@@ -79,23 +91,30 @@ const Dashboard = () => {
               {dashboardData.stressAnalytics.current || 'N/A'}
             </div>
           </div>
-        </div>
+        </FadeInStagger>
 
         {/* Today's Schedule */}
-        <div className="card bg-base-100 shadow-xl">
+        <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.15}>
           <div className="card-body">
             <h2 className="card-title text-2xl">Today's Schedule</h2>
             {dashboardData.todaySchedule.length > 0 ? (
               <div className="space-y-3">
                 {dashboardData.todaySchedule.map((schedule) => (
-                  <div key={schedule._id} className="flex items-center justify-between p-4 bg-base-200 rounded-lg">
+                  <div
+                    key={schedule._id}
+                    className="flex items-center justify-between p-4 bg-base-200 rounded-lg"
+                  >
                     <div>
                       <div className="font-semibold text-base-content">{schedule.task.title}</div>
                       <div className="text-sm text-base-content/70">{schedule.task.subject}</div>
                     </div>
                     <div className="text-right">
-                      <div className="font-semibold text-base-content">{schedule.startTime} - {schedule.endTime}</div>
-                      <div className={`badge ${getPriorityBadgeClass(schedule.task.priority)} mt-1`}>
+                      <div className="font-semibold text-base-content">
+                        {schedule.startTime} - {schedule.endTime}
+                      </div>
+                      <div
+                        className={`badge ${getPriorityBadgeClass(schedule.task.priority)} mt-1`}
+                      >
                         {schedule.task.priority}
                       </div>
                     </div>
@@ -106,12 +125,12 @@ const Dashboard = () => {
               <p className="text-base-content/70">No schedule for today</p>
             )}
           </div>
-        </div>
+        </FadeInStagger>
 
         {/* Charts Row */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Stress Trend */}
-          <div className="card bg-base-100 shadow-xl">
+          <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.2}>
             <div className="card-body">
               <h2 className="card-title">Stress Trend (Last 7 Days)</h2>
               {dashboardData.stressAnalytics.trend.length > 0 ? (
@@ -129,10 +148,10 @@ const Dashboard = () => {
                 <p className="text-base-content/70 text-center py-12">No stress data available</p>
               )}
             </div>
-          </div>
+          </FadeInStagger>
 
           {/* Priority Distribution */}
-          <div className="card bg-base-100 shadow-xl">
+          <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.25}>
             <div className="card-body">
               <h2 className="card-title">Task Priority Distribution</h2>
               {dashboardData.priorityDistribution.length > 0 ? (
@@ -159,17 +178,20 @@ const Dashboard = () => {
                 <p className="text-base-content/70 text-center py-12">No tasks available</p>
               )}
             </div>
-          </div>
+          </FadeInStagger>
         </div>
 
         {/* Upcoming Deadlines */}
-        <div className="card bg-base-100 shadow-xl">
+        <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.3}>
           <div className="card-body">
             <h2 className="card-title text-2xl">Upcoming Deadlines</h2>
             {dashboardData.upcomingDeadlines.length > 0 ? (
               <div className="space-y-3">
                 {dashboardData.upcomingDeadlines.map((task) => (
-                  <div key={task._id} className="flex items-center justify-between p-4 bg-base-200 rounded-lg">
+                  <div
+                    key={task._id}
+                    className="flex items-center justify-between p-4 bg-base-200 rounded-lg"
+                  >
                     <div>
                       <div className="font-semibold text-base-content">{task.title}</div>
                       <div className="text-sm text-base-content/70">{task.subject}</div>
@@ -189,7 +211,7 @@ const Dashboard = () => {
               <p className="text-base-content/70">No upcoming deadlines</p>
             )}
           </div>
-        </div>
+        </FadeInStagger>
       </div>
     </Layout>
   );

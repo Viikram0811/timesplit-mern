@@ -4,6 +4,7 @@ import chatService from '../services/chatService';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
 import Logo from '../components/common/Logo';
+import SplitText from '../components/reactbits/SplitText';
 
 const Chatbot = () => {
   const { user } = useAuth();
@@ -98,7 +99,13 @@ const Chatbot = () => {
             <div className="flex items-center gap-3 min-w-0">
               <Logo compact />
               <div className="min-w-0">
-                <div className="font-semibold tracking-tight">AI Assistant</div>
+                <SplitText
+                  text="AI Study Assistant"
+                  as="h2"
+                  className="font-semibold tracking-tight text-base-content"
+                  delay={35}
+                  duration={0.7}
+                />
                 <div className="text-xs text-base-content/60 truncate">
                   Gemini · Personalized with your resources
                 </div>
@@ -117,7 +124,13 @@ const Chatbot = () => {
                   <div className="flex justify-center mb-4">
                     <Logo />
                   </div>
-                  <h2 className="text-xl font-semibold">Ask anything. Get a plan.</h2>
+                  <SplitText
+                    text="Ask anything. Get a focused plan."
+                    as="h2"
+                    className="text-xl font-semibold"
+                    delay={30}
+                    duration={0.7}
+                  />
                   <p className="mt-2 text-base-content/70">
                     Upload PDFs in Resources, then ask questions here. I’ll answer using your material and format it clearly.
                   </p>

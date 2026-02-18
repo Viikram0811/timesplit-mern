@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Layout from '../components/common/Layout';
 import resourceService from '../services/resourceService';
 import toast from 'react-hot-toast';
+import SplitText from '../components/reactbits/SplitText';
+import FadeInStagger from '../components/reactbits/FadeInStagger';
 
 const Resources = () => {
   const [file, setFile] = useState(null);
@@ -40,13 +42,19 @@ const Resources = () => {
   return (
     <Layout>
       <div className="max-w-2xl mx-auto space-y-6">
-        <h1 className="text-3xl font-bold text-base-content">Study Resources</h1>
+        <SplitText
+          text="Study Resources Library"
+          as="h1"
+          className="text-3xl font-bold text-base-content"
+          delay={35}
+          duration={0.7}
+        />
         <p className="text-base-content/70">
           Upload your PDF study materials (notes, books, assignments). The AI chatbot will
           use this content as a knowledge base to give more personalized and accurate answers.
         </p>
 
-        <div className="card bg-base-100 shadow-xl">
+        <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.1}>
           <div className="card-body">
             <form onSubmit={handleUpload} className="space-y-4">
               <div className="form-control">
@@ -60,7 +68,9 @@ const Resources = () => {
                   className="file-input file-input-bordered w-full"
                 />
                 <label className="label">
-                  <span className="label-text-alt">Maximum size: 10MB. Only PDF files are supported.</span>
+                  <span className="label-text-alt">
+                    Maximum size: 10MB. Only PDF files are supported.
+                  </span>
                 </label>
               </div>
 
@@ -82,21 +92,35 @@ const Resources = () => {
               </div>
             </form>
           </div>
-        </div>
+        </FadeInStagger>
 
-        <div className="alert alert-info">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          <div>
-            <h3 className="font-bold">How it works</h3>
-            <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>Your PDF is converted to plain text on the server.</li>
-              <li>The text is appended to your personal knowledge base file.</li>
-              <li>When you chat with the AI, it first checks your knowledge base.</li>
-              <li>If relevant information is found, it is given to Gemini to refine and answer.</li>
-              <li>If not, Gemini answers from its own general knowledge.</li>
-            </ul>
+        <FadeInStagger as="div" className="alert alert-info" delay={0.18}>
+          <div className="flex items-start gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="stroke-current shrink-0 w-6 h-6 mt-1"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <div>
+              <h3 className="font-bold">How it works</h3>
+              <ul className="list-disc list-inside space-y-1 text-sm">
+                <li>Your PDF is converted to plain text on the server.</li>
+                <li>The text is appended to your personal knowledge base file.</li>
+                <li>When you chat with the AI, it first checks your knowledge base.</li>
+                <li>If relevant information is found, it is given to Gemini to refine and answer.</li>
+                <li>If not, Gemini answers from its own general knowledge.</li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </FadeInStagger>
       </div>
     </Layout>
   );

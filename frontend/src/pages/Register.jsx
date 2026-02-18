@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import Logo from '../components/common/Logo';
+import SplitText from '../components/reactbits/SplitText';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -44,10 +45,19 @@ const Register = () => {
       <div className="card bg-base-100 shadow-2xl w-full max-w-md">
         <div className="card-body">
           <div className="text-center mb-6">
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-2">
               <Logo />
             </div>
-            <p className="mt-2 text-base-content/70">Create your account</p>
+            <SplitText
+              text="Create your Time-Split account"
+              as="h2"
+              className="mt-2 text-lg font-medium text-base-content"
+              delay={40}
+              duration={0.7}
+            />
+            <p className="mt-3 text-base-content/70">
+              Set up your profile to get a personalized schedule.
+            </p>
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="form-control">

@@ -3,6 +3,8 @@ import Layout from '../components/common/Layout';
 import taskService from '../services/taskService';
 import toast from 'react-hot-toast';
 import { format } from 'date-fns';
+import SplitText from '../components/reactbits/SplitText';
+import FadeInStagger from '../components/reactbits/FadeInStagger';
 
 const Tasks = () => {
   const [tasks, setTasks] = useState([]);
@@ -121,14 +123,20 @@ const Tasks = () => {
     <Layout>
       <div className="space-y-6">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-base-content">Tasks</h1>
+          <SplitText
+            text="Tasks & Focus Queue"
+            as="h1"
+            className="text-3xl font-bold text-base-content"
+            delay={30}
+            duration={0.7}
+          />
           <button
             onClick={() => {
               resetForm();
               setEditingTask(null);
               setShowModal(true);
             }}
-            className="btn btn-primary"
+            className="btn btn-primary transition-transform duration-200 hover:-translate-y-0.5"
           >
             + Add Task
           </button>
@@ -139,7 +147,7 @@ const Tasks = () => {
             <span className="loading loading-spinner loading-lg"></span>
           </div>
         ) : (
-          <div className="card bg-base-100 shadow-xl">
+          <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.12}>
             <div className="card-body p-0">
               <div className="overflow-x-auto">
                 <table className="table">
@@ -174,20 +182,20 @@ const Tasks = () => {
                             {task.status !== 'Completed' && (
                               <button
                                 onClick={() => handleComplete(task)}
-                                className="btn btn-sm btn-success"
+                                className="btn btn-sm btn-success transition-transform duration-150 hover:-translate-y-0.5"
                               >
                                 Complete
                               </button>
                             )}
                             <button
                               onClick={() => handleEdit(task)}
-                              className="btn btn-sm btn-primary"
+                              className="btn btn-sm btn-primary transition-transform duration-150 hover:-translate-y-0.5"
                             >
                               Edit
                             </button>
                             <button
                               onClick={() => handleDelete(task._id)}
-                              className="btn btn-sm btn-error"
+                              className="btn btn-sm btn-error transition-transform duration-150 hover:-translate-y-0.5"
                             >
                               Delete
                             </button>
@@ -199,7 +207,7 @@ const Tasks = () => {
                 </table>
               </div>
             </div>
-          </div>
+          </FadeInStagger>
         )}
 
         {/* Modal */}

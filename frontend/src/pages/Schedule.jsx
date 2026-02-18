@@ -4,6 +4,8 @@ import scheduleService from '../services/scheduleService';
 import stressService from '../services/stressService';
 import toast from 'react-hot-toast';
 import { format } from 'date-fns';
+import SplitText from '../components/reactbits/SplitText';
+import FadeInStagger from '../components/reactbits/FadeInStagger';
 
 const Schedule = () => {
   const [schedules, setSchedules] = useState([]);
@@ -94,18 +96,24 @@ const Schedule = () => {
     <Layout>
       <div className="space-y-6">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-base-content">Schedule</h1>
+          <SplitText
+            text="Adaptive Study Schedule"
+            as="h1"
+            className="text-3xl font-bold text-base-content"
+            delay={30}
+            duration={0.7}
+          />
           <div className="flex gap-2">
             <button
               onClick={handleReschedule}
-              className="btn btn-warning"
+              className="btn btn-warning transition-transform duration-150 hover:-translate-y-0.5"
             >
               Reschedule Missed
             </button>
             <button
               onClick={handleGenerate}
               disabled={generating}
-              className="btn btn-primary"
+              className="btn btn-primary transition-transform duration-150 hover:-translate-y-0.5"
             >
               {generating ? (
                 <>
@@ -119,7 +127,7 @@ const Schedule = () => {
           </div>
         </div>
 
-        <div className="card bg-base-100 shadow-xl">
+        <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.12}>
           <div className="card-body">
             <label className="label">
               <span className="label-text font-semibold">Current Stress Level (for scheduling): {currentStress}/10</span>
@@ -138,30 +146,35 @@ const Schedule = () => {
               <span>10</span>
             </div>
           </div>
-        </div>
+        </FadeInStagger>
 
         {loading ? (
           <div className="flex items-center justify-center h-64">
             <span className="loading loading-spinner loading-lg"></span>
           </div>
         ) : Object.keys(groupedSchedules).length === 0 ? (
-          <div className="card bg-base-100 shadow-xl">
+          <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.16}>
             <div className="card-body text-center">
               <p className="text-base-content/70 mb-4">No schedule generated yet</p>
               <button
                 onClick={handleGenerate}
-                className="btn btn-primary"
+                className="btn btn-primary transition-transform duration-150 hover:-translate-y-0.5"
               >
                 Generate Schedule
               </button>
             </div>
-          </div>
+          </FadeInStagger>
         ) : (
           <div className="space-y-6">
             {Object.entries(groupedSchedules)
               .sort(([a], [b]) => a.localeCompare(b))
-              .map(([date, daySchedules]) => (
-                <div key={date} className="card bg-base-100 shadow-xl">
+              .map(([date, daySchedules], index) => (
+                <FadeInStagger
+                  key={date}
+                  as="div"
+                  className="card bg-base-100 shadow-xl"
+                  delay={0.18 + index * 0.04}
+                >
                   <div className="card-body">
                     <h2 className="card-title text-2xl">
                       {format(new Date(date), 'EEEE, MMMM dd, yyyy')}
@@ -199,7 +212,7 @@ const Schedule = () => {
                             {schedule.status === 'Scheduled' && (
                               <button
                                 onClick={() => handleComplete(schedule._id)}
-                                className="btn btn-sm btn-success"
+                                className="btn btn-sm btn-success transition-transform duration-150 hover:-translate-y-0.5"
                               >
                                 Complete
                               </button>
@@ -208,7 +221,7 @@ const Schedule = () => {
                         ))}
                     </div>
                   </div>
-                </div>
+                </FadeInStagger>
               ))}
           </div>
         )}

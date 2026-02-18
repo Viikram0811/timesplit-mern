@@ -4,6 +4,8 @@ import stressService from '../services/stressService';
 import toast from 'react-hot-toast';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { format } from 'date-fns';
+import SplitText from '../components/reactbits/SplitText';
+import FadeInStagger from '../components/reactbits/FadeInStagger';
 
 const StressTracking = () => {
   const [stressLevel, setStressLevel] = useState(5);
@@ -54,10 +56,16 @@ const StressTracking = () => {
   return (
     <Layout>
       <div className="space-y-6">
-        <h1 className="text-3xl font-bold text-base-content">Stress Tracking</h1>
+        <SplitText
+          text="Stress & Wellbeing"
+          as="h1"
+          className="text-3xl font-bold text-base-content"
+          delay={30}
+          duration={0.7}
+        />
 
         {/* Log Stress Form */}
-        <div className="card bg-base-100 shadow-xl">
+        <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.1}>
           <div className="card-body">
             <h2 className="card-title text-2xl">Log Your Stress Level</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -98,11 +106,15 @@ const StressTracking = () => {
               </div>
             </form>
           </div>
-        </div>
+        </FadeInStagger>
 
         {/* Statistics */}
         {statistics && (
-          <div className="stats stats-vertical lg:stats-horizontal shadow w-full">
+          <FadeInStagger
+            as="div"
+            className="stats stats-vertical lg:stats-horizontal shadow w-full bg-base-100"
+            delay={0.16}
+          >
             <div className="stat">
               <div className="stat-title">Average Stress</div>
               <div className="stat-value text-primary">{statistics.average.toFixed(1)}/10</div>
@@ -115,11 +127,11 @@ const StressTracking = () => {
               <div className="stat-title">High Stress Days</div>
               <div className="stat-value text-error">{statistics.highStressDays}</div>
             </div>
-          </div>
+          </FadeInStagger>
         )}
 
         {/* Stress Trend Chart */}
-        <div className="card bg-base-100 shadow-xl">
+        <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.2}>
           <div className="card-body">
             <h2 className="card-title text-2xl">Stress Trend (Last 30 Days)</h2>
             {loading ? (
@@ -147,10 +159,10 @@ const StressTracking = () => {
               <p className="text-base-content/70 text-center py-12">No stress data available yet</p>
             )}
           </div>
-        </div>
+        </FadeInStagger>
 
         {/* Recent History */}
-        <div className="card bg-base-100 shadow-xl">
+        <FadeInStagger as="div" className="card bg-base-100 shadow-xl" delay={0.24}>
           <div className="card-body">
             <h2 className="card-title text-2xl">Recent History</h2>
             {history.length > 0 ? (
@@ -175,7 +187,7 @@ const StressTracking = () => {
               <p className="text-base-content/70">No stress history available</p>
             )}
           </div>
-        </div>
+        </FadeInStagger>
       </div>
     </Layout>
   );
