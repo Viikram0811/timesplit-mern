@@ -1,103 +1,89 @@
-# Time-Split - Intelligent Study Scheduler
+# TimeSplit - Intelligent Study Scheduler
 
-A production-ready full-stack application that helps students manage their study schedule using AI-powered adaptive scheduling, stress tracking, and an AI chatbot assistant.
+A full-stack web application that helps students manage their study schedule using AI-powered adaptive scheduling, stress tracking, and an AI chatbot assistant.
 
-**Version:** 2.0 (Recently Upgraded!) ✨
-
-## 🎉 What's New in v2.0
-
-### 📤 Multi-File Upload Support
-- Upload **PDF, Word, PowerPoint, Text, CSV, JSON** files
-- **Batch upload** up to 10 files at once
-- **Drag & drop** interface
-- File size up to **50MB** each
-- Real-time upload status tracking
-
-### 🎨 Beautiful Light Theme
-- Modern **light theme** throughout the app
-- Professional **blue/gray/white** color palette
-- Enhanced **accessibility** (WCAG AA compliant)
-- Better contrast for readability
-- Responsive design on all devices
-
-### 🎯 Professional Icons
-- **100+ Lucide React icons** for consistent styling
-- Icons throughout the UI for better UX
-- Professional appearance
-- Easy to maintain and extend
-
-### 💄 Enhanced UI/UX
-- Gradient cards on Dashboard
-- Better typography and spacing
-- Improved error messages
-- Educational info cards
-- Modern button styling
-- Helpful tips and hints
-
-**See full details in [IMPLEMENTATION_COMPLETE.md](IMPLEMENTATION_COMPLETE.md) or [UPGRADE_REPORT.md](UPGRADE_REPORT.md)**
+**Version:** 2.0 | **Status:** Production Ready ✅
 
 ---
 
 ## 🚀 Features
 
-### Core Features
-- **User Authentication**: Secure JWT-based authentication with role-based access (Student/Admin)
-- **Task Management**: Create, update, delete, and track tasks with priorities and deadlines
-- **AI-Based Adaptive Scheduler**: Generates personalized study schedules based on:
-  - Task priority and deadlines
-  - Available study hours
-  - Stress levels
-  - Preferred time slots
-- **Stress Tracking**: Daily stress level logging with analytics and trend visualization
-- **AI Chatbot**: Google Gemini-powered chatbot for academic assistance
-- **Study Resources**: Upload your study materials for AI-enhanced learning
-- **Dashboard**: Comprehensive analytics including:
-  - Today's schedule
-  - Upcoming deadlines
-  - Stress analytics with charts
-  - Completion statistics
-  - Productivity summary
+- **User Authentication** - Secure JWT-based login with role-based access
+- **Task Management** - Create and track tasks with priorities and deadlines
+- **AI-Based Scheduler** - Personalized study schedules based on workload and stress levels
+- **Stress Tracking** - Daily logging with trend analytics and visualizations
+- **AI Chatbot** - Google Gemini-powered academic assistant
+- **Study Resources** - Multi-file upload (PDF, Word, PowerPoint, Text, CSV, JSON) with batch support
+- **Dashboard** - Analytics with charts, upcoming deadlines, and completion statistics
+- **Light Theme UI** - Modern, accessible design with 100+ professional icons
 
-### Advanced Features
-- Smart rescheduling algorithm for missed tasks
-- Automatic workload adjustment based on stress levels
-- Weekly performance reports
-- Admin panel capabilities
-- **Multi-file upload** for knowledge base
-- **Professional UI** with light theme and icons
+---
 
 ## 🛠️ Tech Stack
 
-
 ### Backend
-- **Node.js** + **Express.js** - Server framework
-- **MongoDB** + **Mongoose** - Database
-- **JWT** - Authentication
-- **bcryptjs** - Password hashing
-- **express-validator** - Input validation
-- **Google Gemini API** - AI scheduling and chatbot
+- Node.js + Express.js (Server)
+- MongoDB + Mongoose (Database)
+- JWT + bcryptjs (Authentication)
+- Google Gemini API (AI)
 
 ### Frontend
-- **React.js** - UI framework
-- **Vite** - Build tool
-- **Tailwind CSS** - Styling
-- **React Router** - Routing
-- **Recharts** - Data visualization
-- **Axios** - HTTP client
-- **React Hot Toast** - Notifications
+- React.js + Vite (UI Framework)
+- Tailwind CSS (Styling)
+- Recharts (Data Visualization)
+- Lucide React Icons (100+ Icons)
+
+---
+
+## 📦 Setup Instructions
+
+### Backend Setup
+```bash
+cd backend
+npm install
+cp .env.example .env
+# Edit .env with your MongoDB URI and Gemini API key
+npm run dev
+```
+**Runs on:** `http://localhost:4000`
+
+### Frontend Setup
+```bash
+cd frontend
+npm install
+cp .env.example .env
+# VITE_API_URL=http://localhost:4000/api
+npm run dev
+```
+**Runs on:** `http://localhost:5173`
+
+---
 
 ## 📁 Project Structure
 
 ```
 TimeSplit/
 ├── backend/
-│   ├── config/
-│   │   └── db.js              # MongoDB connection
-│   ├── controllers/            # Route controllers
-│   │   ├── authController.js
-│   │   ├── userController.js
-│   │   ├── taskController.js
-│   │   ├── scheduleController.js
+│   ├── config/        # Database configuration
+│   ├── controllers/    # Route controllers
+│   ├── middleware/     # Auth, validation, error handling
+│   ├── models/        # MongoDB schemas
+│   ├── routes/        # API endpoints
+│   ├── services/      # Business logic
+│   ├── data/          # Knowledge base files
+│   └── server.js      # Main server file
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # React components
+│   │   ├── pages/         # Page components
+│   │   ├── services/      # API services
+│   │   ├── context/       # React context
+│   │   ├── utils/         # Utilities
+│   │   └── App.jsx        # Main app
+│   └── package.json
+│
+└── README.md
 │   │   ├── stressController.js
 │   │   ├── chatController.js
 │   │   └── dashboardController.js
