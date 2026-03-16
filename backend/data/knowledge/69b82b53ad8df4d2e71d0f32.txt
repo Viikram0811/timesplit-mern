@@ -1,0 +1,1463 @@
+
+
+===== NEW DOCUMENT: CSCL UNIT 5.pdf - 2026-03-16T16:10:32.607Z =====
+
+UNIT-V
+
+Penalties and Compensation: 
+  Penalties, Compensation 
+and Adjunction of 
+violations of provisions of 
+IT Act 2000 and judicial 
+review
+
+The Indian law concerning Cyberspace and Internet is covered under 
+the IT Act, it provides for basically two types of penalties for 
+violation of the provisions of IT Act. 
+Civil liability of damages or compensation. 
+Criminal liability as punishment for the commission of offences in the 
+form of either imprisonment or fine or both for the commission of 
+offences by the offenders.
+Penalty and Compensation for Damage to Computer or Computer 
+System:
+Under Section 43 of the IT Act, it has been provided that if any person 
+without permission of the owner or any other person who is in 
+charge of a computer or computer system or computer network:
+(a)
+accesses such computer, computer system or computer network or 
+computer resource.
+(b)
+(b) downloads, copies or extracts any data, computer database or 
+information from such computer or computer system, or computer
+
+network, information or data held or stored in any removable storage 
+medium.
+(c) introduces or causes to be introduced any computer contaminant or 
+computer virus.
+(d) damages or causes to be damaged any computer or computer 
+system or network, data, computer database or any other computer 
+program.
+(e) disrupts or causes disruption of any computer system or computer 
+network.
+(f) denies or causes the denial of access any person authorized to 
+access.
+(g) provides any assistance to any person to facilitate access to a 
+computer system or computer network in contravention of the 
+provisions of this Act.
+(h) charges the services availed of by a person to the account of 
+another person by tampering or manipulating any computer, system 
+or network
+
+(i)
+destroys, deletes or alters any information residing in a computer 
+resource or diminishes its value or utility or affects it injuriously 
+by any means;
+(j) steal, conceals, destroys or alters or causes any person to steal, 
+conceal, destroys or alter any computer source code used for a 
+computer resource with an intention to cause damage, that person 
+shall be liable to pay damages by way of compensation not 
+exceeding one crorer rupees to the person so affected.
+Section 43 thus provides for the explanation to the above Section 
+which defines:
+(i)
+computer contaminant
+(ii) computer database
+(iii) computer virus
+(iv) computer damage
+(v) computer source code.
+
+Compensation for Failure to Protect Data:
+Where a body corporate, possessing, dealing or handling any sensitive 
+personal data or information in a computer resource which it owns, 
+controls and operates is negligent in implementing and maintaining 
+reasonable security practices and procedures and thereby causes 
+wrongful loss or wrongful gain to any person such body corporate 
+shall be liable to pay damages by the way compensation to the 
+person so affected. 
+In Explanation to Section 43A of the IT Act provides for the 
+definitions.
+(i)
+body corporate.
+(ii) reasonable security practices and procedures.
+(iii) sensitive personal data or information.
+
+Penalty for Failure to Furnish Information, Return or any Other 
+Penalty: If any person who is required under this Act or any rules 
+or regulations made there under to:
+(a)
+furnish any document, return or report to the Controller or the 
+Certifying Authority fails to furnish the same, he shall be liable to 
+a penalty not exceeding one lakh and fifty thousand rupees for 
+each such failure.
+(b) file any return or furnish any information, books or other 
+documents with in the time specified there for in the regulations 
+fails to file return or furnish the same within the time specified 
+there for in the regulations, he shall be liable to a penalty not 
+exceeding five thousand rupees for everyday during which such 
+failure continues.
+(c) maintain books of account or records, fails to maintain the same, he 
+shall be liable to a penalty not exceeding then ten thousand rupees 
+for every day during which the failure continues.
+
+Adjudication of Disputes under the IT Act:
+The adjudication has been provided for
+()
+whether any person has committed a contravention of any of the 
+provisions of this Act or of any rule, regulation, direction or order 
+made there under which renders him liable to pay penalty or 
+compensation the Central Government shall subject to provisions 
+of sub-section (3),appoint any officer not below the rank of a 
+Director to the Government of India or equivalent officer of a State 
+Government to be an adjudicating officer for holding an enquiry in 
+the manner prescribed by the Central Government. 
+(1A)The adjudicating officer appointed under sub-section (1) shall 
+exercise jurisdiction to adjudicate matters in which the claim for 
+injury or damage does not exceed rupees five crore.
+Every adjudicating officer shall have the powers of a civil court which 
+areconferred on the Appellate Tribunal under the Sub-Section (2) 
+of Section 58 ofthe IT Act.
+
+a)
+all proceeding before the adjudicating officer shall be deemed to 
+be judicial proceedings within the meaning of Sections 193 and 
+228 of the Indian Penal Code.
+(b) and deemed to be a civil court for the purposes of Sections 345 and 
+346 of the Code of Criminal Procedure 1973.
+(c) and shall also be deemed to be a civil court for the purposes of 
+Order XXI of the Civil Procedure Code.
+The adjudicating officer adjudging quantum of compensation under 
+Chapter IX of this Act shall have due regard to-
+(a)
+the amount of gain of unfair advantage, wherever quantifiable 
+made as a result of the default.
+(b) the amount of loss caused to any person as a result of the default.
+(c) the repetitive nature of the default.
+
+The Appellate Tribunal (AT):
+Sections. 48 to 64 of Chapter X of IT Act contain the various 
+provisions relating to appellate tribunal. 
+It is significant to note that Cyber Appellate Tribunal the body which 
+existed earlier under the Information Technology Act, 2000 has 
+been merged with the Appellate Tribunal that is the Telecom 
+Dispute Settlement and Appellate Tribunal (TDSAT) under the 
+Telecom Regulatory Authority of India Act, 1997 by Finance Act 
+2017. 
+Sections 49, 50, 51, 52, 52A, 52B, 52C,53, 54 and 56 of Chapter X of 
+Information Technology Act have been omitted by Finance Act 
+2017. 
+Provisions relating to Appellate Tribunal are explained below:
+
+The Appellate Tribunal Sec. 48(1):
+The Telecom Disputes Settlement and Appellate Tribunal 
+established under Sec.14 of the Telecom Regulatory Authority 
+of India Act, 1997, 
+as per Part XIVof Chapter VI of the Finance Act, 2017, w.e.f. 
+26/05/2017, be the Appellate Tribunal for the purposes of this 
+Act and the said Appellate Tribunal shall exercise the 
+jurisdiction, powers and authority conferred on it by or under 
+this Act. 
+The Central Government shall specify, by notification, the 
+matters and places in relation to which the Appellate Tribunal 
+may exercise jurisdiction.
+(ii) The Appellate Tribunal (Qualifications, Experience and other 
+Conditions of Service of Members) shall be as per the 
+Appellate Tribunal Rules, 2017 (w.e.f.1/6/17).
+
+Appeal to Appellate Tribunal (AT) (Sec. 57):
+An appeal is a request made by the aggrieved party to modify or 
+reverse an order, Appeals function both as a process for error 
+correction and a process of clarifying and interpreting law. Any 
+person aggrieved by an order made by controller or adjudicating 
+officer under this Act may prefer an appeal to AT [Sec. 57(1)].
+On receipt of an appeal under Section 57(1), the Appellate Tribunal 
+may after giving an opportunity of being heard to the parties to the 
+appeal pass such orders there on as it thinks fit. 
+It may confirm, modify or set aside the order against which an appeal 
+has been made [Sec. 57(4)). The Appellate Authority shall send a 
+copy of every order made by it to: 
+(i)
+the parties to appeal, and (ii)the concerned controller or 
+adjudicating officer [Sec. 57(5)]. The appeal shall be dealt with by 
+it as expeditiously as possible and endeavor shall be made by it to 
+dispose of the appeal finally within 6 months from the date of 
+receipt of theappeal [Sec. 57(6)].
+
+Procedure of AT [Sec. 58(1)]:
+The Appellate Tribunal shall not be bound by the procedure laid down 
+by the Code of Civil Procedure, 1908. However, it shall be guided 
+by the principles of natural Justice and subject to the other 
+provisions of this Act and of any rules the Appellate Tribunal shall 
+have powers to regulate its own procedure including the place at 
+which it shall have its sittings.
+Powers of AT [Sec. 58(2)]:
+The Appellate Tribunal shall have for the purposes of discharging its 
+functions under this Act, the same powers as are vested in a Civil 
+Court under the Code of Civil Procedure, 1908. 
+These are as follows:
+(a)
+summoning and enforcing the attendance of any person and 
+examining him on oath.
+(b) requiring the discovery and production of documents or other 
+electronic records.
+(c) receiving evidence on affidavits.
+
+(d) issuing commissions for the examination of witnesses or 
+documents.
+(e) reviewing its decisions.
+(f) dismissing an application for default or deciding it ex-parte.
+(g) any other matter which may be prescribed.
+Right to Make Legal Representation (Sec. 59):
+The appellant may either appear in person or authorize one or more 
+legal practitioners or any of its officers to present his or its case 
+before the Appellate Tribunal.
+Civil Court not to Have Jurisdiction (Sec. 61):
+No Civil Court shall have jurisdiction to entertain any suit or 
+proceeding in respect of any matter which an adjudicating officer or 
+the Appellate Tribunal is empowered to determine under this Act. 
+No court shall grant injunction in respect of any action taken or to 
+be taken in pursuance of any power conferred by or under this Act.
+
+Appeal to High Court (Sec. 62):
+Any person aggrieved by any decision or order of Appellate Tribunal 
+may file an appeal to the High Court within 60 days from the date 
+of communication of such decision or order. 
+An appeal may be on any question of fact or law arising out of such 
+order. The High Court may allow it to be filed within a further 
+period of 60 days if it is satisfied that sufficient cause prevented 
+him from filing the appeal with in the prescribed period.
+Compounding of Contraventions and Recovery of Penalty or 
+Compensation:
+Any contravention under this Act either before or after the institution 
+of Adjudication proceedings may be compounded by the Controller 
+or any other officer who is specifically authorized by him or by the 
+Adjudicating officer subject to such condition as the Controller or 
+such other officer or the Adjudicating officer may specify: 
+Provided that such sum shall not in any case, exceed the maximum 
+amount of the penalty which may be imposed under this Act for
+
+the contravention so compounded. However, the above proviso shall 
+not apply to a person who commits the same or similar 
+contravention within a period of three years from the date on 
+which the first contravention, committed by him was 
+Compounded.  
+Any second or subsequent contravention committed after the expiry 
+of a period of three years from the date on which the contravention 
+was Previously compounded shall be deemed to be a first 
+contravention. Moreover , no proceeding or further proceeding 
+shall be taken against the person guilty of such contravention in 
+respect of the contravention so compounded.
+The word 'compound' used in this section means agreeing for 
+considerations not to prosecute a person. Compounding an offence 
+means abstaining from prosecuting the person of any offence or 
+crime in question29. Moreover, according to the proviso of this 
+section, the maximum amount of penalty or compensation which 
+can be compoundable under this Act is Rupees one crore.  
+
+Appeal to the High Court under the IT Act, and Judicial Review 
+under the Constitution of India:
+(i) Under the IT Act, any person aggrieved by any decision or order of 
+the Appellate Tribunal may file an appeal to the High Court within 
+sixty days from the date of communication of the decision or order 
+of the Appellate Tribunal to him on any question of fact or law 
+arising out of such order: Provided the High Court may, if it is 
+satisfied that the appellant was prevented by sufficient cause from 
+filing the appeal within the said period allow it to be filed within a 
+further period not exceeding sixty days. This means that the High 
+Court has been given the authority of second appeal as against the 
+orders of the first appeal before the Appellate Tribunal under the IT 
+Act. In the above provision of the IT Act, the expression 'sufficient‘ 
+within the meaning of Section 5 of the Limitation Act, 1963 or 
+Order 22, Rule9 of the CPC or any other similar provision should 
+receive a liberal construction so as to advance substantial justice 
+when no negligence or want of bona fides is imputable to a party. 
+
+(ii) Under Article 226 of the Constitution of India every High Court 
+shall have powers throughout the territories in relation to which it 
+exercises jurisdiction to issue to any person or authority, including 
+in appropriate cases, any Government, within those territories 
+directions, orders or writs, including writs in the nature of 
+mandamus, prohibition and certiorari in respect of any orders 
+against the Controller or the Adjudicating officer or the Appellate 
+Tribunal under this Act for the enforcement of any of the rights 
+conferred by Part III and for any other purposes. 
+The power conferred on a High Court by Article 226 of the 
+Constitution shall not be in derogation of the power conferred on 
+the Supreme Court by clause(2) of Article 32 of the Constitution 
+33 The powers conferred upon the High Court under Article 226 of 
+the Constitution are discretionary in nature which can be invoked 
+for the enforcement of any fundamental right or legal right but not 
+for more contractual rights arising out of an agreement particularly 
+in view of the existence of efficacious alternative remedy. 
+
+The Constitutional Court should insist upon the party to avail the same 
+instead of invoking the extraordinary writ jurisdiction of the High 
+Court.
+It is emphasized by the Court that there is need to avoid arbitrariness by 
+administrative authority in spheres where the relevant statute does not 
+lay down any quasi judicial obligation. It has been held by the Court 
+that the grounds for issuing writs of certiorari and prohibition are as 
+under follows:
+• 
+Where there is a defect of jurisdiction it attracts certiorari. But certiorari 
+would not lie because the decision of a tribunal on a subject matter within 
+a jurisdiction is considered to be wrong.
+• The principles of natural justice are not inflexible and may differ in 
+different circumstances.
+A writ of certiorari can be issued for correcting errors of jurisdiction 
+committed by inferior courts or tribunals. A writ can be issued wherein 
+exercise of jurisdiction conferred on it the court or tribunal acts illegally 
+or improperly.
+
+•
+The writ of certiorari will be issued if there is an error of law apparent 
+on the face of the record or if tribunal acts without sufficient evidence 
+or misdirects itself in considering the evidence. 
+•
+A writ petition cannot succeed if its factual basis is not established. In 
+a Calcutta case the petitioner sought inspection of his answer scripts at 
+a particular examination on the ground that he had reason to believe 
+that his answer scripts were missing. However, existence of the answer 
+scripts was proved from the order of the Controller of Examinations. It 
+was held that writ could not be issued.
+(iii) 
+Under Article 227 of the Constitution of India, every High Court shall 
+have superintendence over all courts and tribunals throughout the territories 
+in relation to which it exercises jurisdiction. Without prejudice to the 
+generality of the foregoing provisions, the High Court may:
+•
+ call for returns from such courts;
+•  make and issue general rules and prescribe forms for regulating the 
+practice and proceedings of such courts; and
+• prescribe forms in which books, entries and accounts shall be kept by the 
+officers of any such courts
+
+(iv) Under Article 32 of the Constitution of India the right to move the 
+Supreme Court by appropriate proceedings for the enforcement of 
+the remedies under this Article is guaranteed. 
+The Supreme Court shall have the power to issue directions or orders 
+or writs including writs in the nature of mandamus, prohibition and 
+certiorari whichever may be appropriate for the enforcement of any 
+of the right conferred by this Part.
+A writ of certiorari may be issued by the Supreme Court where the law 
+under which the decision was given is void. And a writ of certiorari 
+may also be issued where a decision itself violates a fundamental 
+right or the decision violates the law or is without jurisdiction. 
+Moreover, a writ of certiorari can be issued by the Supreme Court 
+where the decision is against natural justice, mala fide, perverse or 
+based on non-applicability of a venue.
+(v) Under Article 136 of the Constitution of India the Supreme Court 
+may in its discretion, grant special leave to appeal from any 
+Judgment, decree, determination, sentence or order in any case or
+
+matter passed or made by any court or tribunal in the territory of India. 
+Under this Article apart from above remedies discussed there can also 
+be a special leave to appeal against the order or Judgment of the 
+Appellate Tribunal under the Constitution of India. 
+under Article 136 may be exercised against an order passed by any 
+tribunal. This jurisdiction is not subject to any condition that the 
+party who seeks special leave of the Supreme Court to appeal from 
+such order is to exhaust all his remedies including petition under 
+Article 226.
+The Supreme Court would not allow a new point (which was not taken 
+or not pressed before the High Court) to be raised before it or which 
+was sought to be introduced by filing additional grounds. Where the 
+point could have been urged before the High Court under Articles 
+226 or 227, the Supreme Court would not permit the appellant to 
+raise it for the first time before it not to assail an undertaking given 
+by him in the High Court. 
+
+It has been held by the Supreme Court that where the judgment is 
+tainted with serious legal infirmities or is founded on a legal 
+construction which is wrong, the special leave may be granted. Also 
+it has been held by the Supreme Court that a petition for special 
+leave would be granted where approach of the court whose 
+judgment is under appeal is wrong in law.
+
+===== NEW DOCUMENT: CSCL UNIT 6.pdf - 2026-03-16T16:10:42.717Z =====
+
+UNIT-V
+
+Offences under the Cyberspace, 
+Internet in India and Miscellaneous 
+provisions of IT Act and Conclusions:
+Some important offences under the
+Cyberspace law and the Internet in India.
+Other offences under the Information
+Technology Act in India.
+The role of Electronic Evidence and 
+miscellaneous provisions of the IT Act
+
+Some important offences under the Cyberspace law and the 
+Internet in India:
+Obscenity and Pornography on Cyberspace:
+These days the Internet is very widely used by persons individually 
+and group of persons and companies all over the world. With the 
+frequent use of Internet in the form of blogging and websites we find 
+that the trend has grown towards the use of 'face book' and the latest 
+invention of 'twitter' for making one self popular as a celebrity and 
+even for simple chatting by people. 
+In spite of the fact that there are numerous and tremendous uses of the 
+cyberspace and Internet we witness that many a times these are also 
+being misused for criminal activities. 
+We have observed recently that people are engaged in various kinds of 
+criminal activities on the cyberspace and the Internet. We have also 
+heard and observed that many young people particularly engage 
+themselves in chatting on the Internet without knowing the identity of 
+other persons with whom they are chatting. With the result, in many 
+cases, the people using Internet are cheated, duped and mislead. 
+
+Hacking on the Cyberspace and Internet:
+The term 'Hacking' is connected with the unauthorized access to a 
+computer system in which computer is the means as well as the 
+target for committing the crime. 
+These days the crime of hacking is becoming very popular and 
+increasing very fast on the Internet. Hackers use the Internet to hack 
+into remote computer system and commit data theft fraudulently 
+destruct data or cause damage to the computer or the computer 
+systems. 
+Any person who destroys, alters any information contained in a 
+computer resource or destroys computer system actually diminishes 
+the value and utility of genuine data and affect harmfully or 
+injuriously with either intention or knowledge to cause wrongful 
+gain or wrongful loss to any person or the public commits the 
+offence. Section 66 of the IT (Amendment) Act, 2008 is concerned 
+with computer related offences which were under the IT Act, 2000, 
+called hacking with thecomputer system. 
+
+Under this Section of the IT Act, 2008 it is stated that: If any person, 
+dishonestly or fraudulently does any act referred to in Section 43, 
+he shall be punishable with imprisonment for a term which may 
+extend to three years or with fine which may extend five lakh 
+rupees or with both. Explanation: For the purposes of this Section-
+(a)
+the word 'dishonestly' shall have the meaning assigned to it in 
+Section24 of the Indian Penal Code (45 of 1860);
+(b) the word 'fraudulently' shall have the meaning assigned to it in 
+Section25 of the Indian Penal Code (45 of 1860).
+Other Offences-Computer Resource: 
+Under Section 66A (i) any person who sends by means of a computer 
+resource or a communication device:
+(a)
+Any information that is grossly offensive or has menacing 
+character; or
+(b) Any information which he knows to be false but for the purpose of 
+causing annoyance, inconvenience, danger, obstruction insult, 
+
+injury, criminal intimidation, enmity, hatred or ill will, persistently by 
+making use of such computer resource or a communication device.
+(c) Any electronic mail or electronic mail message for the purpose of 
+causing annoyance inconvenience or to deceive or to mislead the 
+addressee or recipient about the origin of such messages shall be 
+punishable with imprisonment for a term which may extend to three 
+years and with fine.
+Facts of the Case: In 2012, Mumbai Police arrested two girls named 
+Shaheen Dhada and Rinu Srinivasan for posting allegedly offensive & 
+objectionable comments on Facebook against a bandh imposed on the 
+death of the political leader of Shiv Sena founder Bal Thackeray. 
+The police made the arrest under Section 66Aof the Information 
+Technology Act 2000 which states that any person punishes any 
+person who sends through a computer resource or communication 
+device any information that is grossly offensive or with the knowledge 
+of its falsity the information is transmitted for the purpose of causing 
+annoyance, inconvenience, danger, insult, injury, hatred, or ill will.
+
+Issues Raised in Case:
+The petitioner in the present writ petition has challenged the 
+constitutional validity of Section 66A of the Information 
+Technology Act.  The petitioner challenged the constitutional 
+validity of the act on the following grounds:
+1. It infringes the fundamental right to free speech and expression and 
+is not saved by any of the eight subjects covered in Article 19(2).
+2. This section suffers from the vice of vagueness and without 
+reasonable standards because of which the innocent persons are 
+roped in as offenders.
+3. The enforcement of the said section would be an insidious form of 
+censorship that impairs a core value contained in Article 19(1)(a).
+4. The said section infringes the rights of the individual under Articles 
+14and 21 in as much there is no intelligible differentia between 
+those who use the internet and those who by words spoken or 
+written use theirmediums of communication.
+
+Violation of the Right of Privacy on Cyberspace/Internet:
+Privacy cannot be defined in an absolute fashion because it connotes 
+different meanings and perceptions for different people. 
+It is a kind of right of an individual or group to keep their lives out of public 
+view in order to keep secret their personal affair. It is a kind of a claim by 
+individuals, groups or institutions to determine for themselves as to how 
+to what extent and when information about their lives and affairs may be 
+communicated to others. The right to privacy as a human right has been 
+recognized in Art. 8 of the European Convention on Human Rights 1950 
+which reads as follows: Article 8.
+()
+Every one has the right to respect for his private and family life, his 
+home and his correspondence.
+(2) There shall be no interference by a public authority with the exercise of 
+this right except such as is in accordance with the law and is necessary 
+in a democratic society in the interests of national security, public safety 
+or the economic well-being of the country, for the prevention of disorder 
+or crime, for the protection of health or morals or for the protection of 
+the rights and freedoms of others.
+
+Punishment for Violation of Privacy, Breach of Confidentiality 
+and Privacy under the IT Act:
+ In the IT (Amendment) Act 2008 a new provision under the IT Act 
+has been introduced for the purpose of punishment for violation of 
+privacy. Under Section66E whoever intentionally or knowingly 
+captures, publishes or transmits the image of a private area of any 
+person without his or her consent under the circumstances violating 
+the privacy of that person shall be punished with imprisonment 
+which may extend to three years or with fine not exceeding two 
+lakh rupees or with both. 
+The above offence defined provides for meaning to various situations 
+under the explanation which are as follows:
+(a)
+'transmit' means to electronically send a visual image with the 
+intent that it be viewed by a person or persons;
+(b) 'capture', with respect to an image, means to videotape, 
+photograph, film or record by any means
+
+(c) 'private area' means the naked or undergarments clad genitals, 
+public area, buttocks or female breast;
+d) 'publishes' means reproduction in the printed or electronic form and 
+making it available for public;
+(e) 'under circumstances violating privacy' means circumstances in 
+which a person can have a reasonable expectation that-
+(i)
+he or she could disrobe in privacy, without being concerned that 
+an image of his private area was being captured; or
+(ii) any part of his or her private area would not be visible to the 
+public, regardless of whether that person is in a public or private 
+place.
+Terrorism on Cyberspace/Internet:
+In modern times terrorism as a means and method to cause fear and 
+undue violence against individuals, groups or countries has posed 
+a very menacing effect and as a big challenge in this world. 
+
+The causes of terrorism in this world are numerous including 
+religious, geographical and against particular countries by one 
+country against the other countries. 
+While terrorism  is a complicated complex and a very challenging 
+task and is condemned by most of the people is almost all the 
+countries in this world yet there is no unanimity among the people 
+about the methods to regulate the phenomenon of terrorism in this 
+world. 
+In India with the amendment of IT (Amendment) Act, 2008, a new 
+provision has been introduced for the punishment for Cyber 
+Terrorism3 which provides-(1) Whoever:(a) With intent to threaten 
+the unity, integrity, security or sovereignty of India or to strike 
+terror in the people or any section of the people by-
+Denying or causing the denial of access to any person authorized to 
+access computer resource; or
+Attempting to penetrate or access a computer resource without 
+authorization or exceeding authorized access; 
+
+Other offences under the Information Technology Act in India.
+A Brief Overview of Cyber crimesThese days Information Technology 
+(IT) is becoming increasingly popular and imminent in the day-to-
+day life of individuals, companies and the society as a whole. This is 
+because it has brought more efficiency, accuracy and speedier 
+transactions particularly in business world. 
+We find the popularity of data processing equipments and the use of 
+computers in day-to-day transactions like online banking, 
+telemarketing, use of credit or debit cards and so on, which have 
+made banking very swift, and accurate. Such advances in the IT and 
+the potentialities in the business world have attracted many misuses, 
+unscrupulous people and criminals to commit many cyber crimes 
+relating to financial world.
+The cyber crime offenders befool people through the Internet using 
+different techniques and schemes. And therefore, we find these days 
+a new class of white collared criminals perpetuating fraud on the 
+Internet. 
+
+With various kinds of financial crimes on the cyberspace ranging from 
+security frauds by altering information into a computer system or 
+manipulating the programms for processing information and 
+altering the output. 
+Many frauds are being committed on the online auction trade. The 
+Internet fraud commonly known as phishing where e-mails appear 
+to be from legitimate online banking websites warn the recipients of 
+a recent unauthorized purchase for their attention requiring urgent 
+action. 
+Such Internet fraud masters can create false identities about 
+themselves and sell the information to equally dangerous third 
+parties. Even Internet gambling is becoming popular. 
+Digital forgery is done by creating document which the offender 
+knows is not genuine and yet project the document as if it is 
+genuine one by affixing somebody else's signature on the 
+document. The Internet is also being used for sale of illegal things 
+or articles which are prohibited in a country.
+
+Offences by Intermediaries:
+Under Section 67C of IT (Amendment) Act, 2008-(1) Intermediary 
+shall preserve and retain such information as may be specified for 
+such duration and in such manner and format as the Central 
+Government may prescribe.
+(2) Any intermediary who intentionally or knowingly contravenes the 
+provisions of sub-section (1) shall be punished with an 
+imprisonment for a term which may extend to three years and also 
+be liable to fine. The offence is also cognizable and billable under 
+Section 77B of the Act.
+(a) Exemption from Liability of Intermediary in Certain Cases. Under 
+Chapter XII of the IT (Amendment) Act, 2008, Section 79 states-
+(1) Notwithstanding anything contained in any law for the time 
+being in force but subject to the provisions of sub-sections (2) and 
+(3), an intermediary shall not be liable for any third party 
+information, data, or communication link made available or hosted 
+by him.
+
+(2) The provisions of sub-section (1) shall apply if-(a) the function of 
+the intermediary is limited to providing communication system over 
+which information made available by third parties is transmitted or 
+temporarily stored or hosted.
+Explanation: For the purpose of this section, the expression 'third party 
+information  means any information dealt with by an intermediary 
+in his capacity as an intermediary.
+Power of the Controller to Give Directions to Certifying 
+Authorities:
+The Controller under the Act has the power-(1) to may by order direct a 
+CA or any employee of such Authority to take such measures or cease 
+carrying on such activities as specified in the order by the Controller if 
+those are necessary to ensure compliance with the provisions of this 
+Act, rules or any regulations made there under.(2) Any person who 
+intentionally or knowingly fails to comply with any order under sub-
+section (1) shall be guilty of an offence and shall be liable on 
+conviction to imprisonment for a term not exceeding two years or a 
+fine not exceeding one lakh rupees or both.
+
+Power to Issue Directions for Interception or Monitoring or 
+Decryption of Information:
+Under Section 69 of the IT (Amendment) Act, 2008-(1) Where the 
+Central Government or State Government or any of its officers 
+specially authorized by the Central Government or the State 
+Government, if satisfied that it is necessary or expedient do in the 
+interest of the sovereignty or integrity of India, defense of India, 
+security of the State friendly relations with foreign States or public 
+order or for preventing incitement to the commission of any 
+cognizable offence relating to above or for investigation of any 
+offence it may subject to the provisions of sub-section 
+(2), for reasons to be recorded in writing, by order, direct any agency 
+of the appropriate government to intercept, monitor or decrypt or 
+cause to be intercepted or monitored or decrypted any information 
+generated, transmitted, received or stored in any computer resource.
+
+Power to Issue Directions for Blocking for Public Access of any 
+Information: Section 69A of the IT (Amendment) Act 2008 
+provides-
+()
+Where the Central Government or any of its officer specially 
+authorized by it in this behalf is satisfied that it is necessary or 
+expedient to do so in the interest of sovereignty and integrity of 
+India defense of India security of State, friendly relations with 
+foreign States or public order or for preventing incitement to the 
+commission of any cognizable offence relating to above, it may 
+subject to the provisions of sub-section 
+(
+2)for reasons to be recorded in writing, by order, direct any agency of 
+the Government or intermediary to block for access by the public or 
+cause to be blocked for access by the public any information 
+generated transmitted, received, stored or hosted in any computer 
+resource. (2) The procedure and safeguards subject to which such 
+blocking for access by the public may be carried out shall be such as 
+may be prescribed.
+
+Power to Authorize to Monitor and Collect Traffic Data or 
+Information for Cyber Security: In Section 69B of the IT 
+(Amendment) Act 2008 provides-(1) The Central Government may, 
+to enhance cyber security and for identification, analysis and 
+prevention of intrusion or spread of computer contaminant in the 
+country by notification in the Official Gazette authorize any agency 
+of the Government to monitor and collect traffic data or information 
+generated, transmitted, received or stored in any computer resource.
+(2) The intermediary or any person in-charge of the computer resource 
+shall when called upon by the agency which has been authorized 
+under sub-section (1) provide technical assistance and extend all 
+facilities to such agency to enable online access or to secure and 
+provide online access to the computer resource generating, 
+transmitting, receiving or storing such traffic data or information.
+(3) The procedure and safeguards for monitoring and collecting traffic 
+dataor information, shall be such as may be prescribed.  
+
+Offences Relating to Protected System: 
+Section 70 as amended by the IT (Amendment) Act 2008 provides-(1) The 
+appropriate Government may by notification in the Official Gazette declare 
+any computer resource which directly or indirectly affects the facility of 
+Critical Information Infrastructure, to be a protected system.
+Explanation: For the purposes of this section, 'Critical Information 
+Infrastructure' means the computer resource, the incapacitation or 
+destruction of which, shall have debilitating impact on national security, 
+economy, public health or safety.
+(2) The appropriate government may, by order in writing, authorize the 
+persons who are authorized to access protected systems notified under sub-
+section (1).
+(3) Any person who secures access or attempts to secure access to a protected 
+system in contravention of the provisions of this section shall be punished 
+with imprisonment of either description for a term which may extend to ten 
+years and shall also be liable to fine.
+(4) The Central Government shall prescribe the information security practices 
+and procedures for such protected system.
+
+The Offence of Misrepresentation: Under Section 71 as amended by 
+the IT (Amendment) Act 2008, it is provided that any person who 
+makes any misrepresentation to or suppresses any material fact 
+from the Controller or the CA for obtaining any license or 
+Electronic Signature Certificate, as the case may be, shall be 
+punished with imprisonment for a term which may extend to two 
+years, or with fine which may extend to one lakh rupees or with 
+both.
+Offence of Publishing Electronic Signature Certificate with False 
+Particulars: 
+Section 73 as amended by the IT (Amendment) Act, 
+2008, provides-(1) No person shall publish a Electronic Signature 
+Certificate or other wise make it available to any other person with the 
+knowledge that-(a) The Certifying Authority listed in the certificate 
+has not issued it. or(b) The subscriber listed in the certificate has not 
+accepted it. or(c) The certificate has been revoked or suspended, unless 
+such publication is for the purpose of verifying a electronic signature 
+created prior to such suspension or revocation
+
+Confiscation as Penalty for Contravention of the Provisions of the 
+Act:  Under Section 76 of the IT Act, if any computer, computer  
+system, floppies, compact disks, tape drives or any other 
+accessories related thereto, in respect of which any provision of this 
+Act rules orders or regulations made there under has been or is 
+being contravened shall be liable to confiscation.
+Provided that where it is established to the satisfaction of the court 
+adjudicating the confiscation that the person in whose possession, 
+power or control of any such computer, computer system, floppies, 
+compact disks tape drives or any other accessories relating thereto 
+is found, is not responsible for the contravention of the provisions 
+of this Act, rules, orders, or regulations made there under the court 
+may, instead of making an order for confiscation of such computer, 
+computer system, floppies, compact disks, tape drives or any other 
+accessories related thereto, make such other order authorized by 
+this Act against the person contravening the provisions of this Act, 
+rules, orders, or regulations made there under as it may think fit.
+
+Compounding of Offences under the IT Act: Under Section 77A of 
+the IT (Amendment) Act, 2008-(1) A court of competent 
+jurisdiction may compound offences other than the offences for 
+which the punishment for life or imprisonment for a term exceeding 
+three years has been provided under this Act: Provided that the 
+court shall not compound such offence where the accused is, by 
+reason of his previous conviction, liable to either enhanced 
+punishment or to a punishment of a different kind: Provided further 
+that the court shall not compound any offence where such offence 
+affects the socio-economic conditions of the country or has been 
+committed against a child below the age of 18 years or a woman.(2) 
+The person accused of an offence under this Act may file an 
+application for compounding in the court in which offence is 
+pending for trial and the provisions of Sections 265B and 265C of 
+the Code of Criminal Procedure, 1973 shall apply.
+
+Cognizance of Offences and Bail under the IT Act: 
+Under Section 77B of the IT (Amendment) Act, 2008, notwithstanding 
+anything contained in the Code of Criminal Procedure, 1973, an 
+offence punishable with imprisonment of three years and above 
+shall be cognizable and the offence punishable with imprisonment 
+of three years shall be boilable.
+Punishment for Abetment and Attempt to Commit Offences under 
+the IT Act: Under Section 84B of the IT (Amendment) Act 2008, 
+any person who abets any offence shall, if the act abetted is 
+committed in consequence of the abetment, and no express 
+provision is made by this Act for the punishment of such abetment, 
+be punished with the punishment provided for the offence under 
+this Act.
+Explanation: An act or offence is said to be committed in consequence 
+of abetment when it is committed in consequence of the instigation, 
+or in pursuance of the conspiracy or with the aid which constitutes 
+the abetment.
+
+Commission of Offences by Companies under the IT Act: Under 
+Section 85 of the Information Technology Act, 2000-(1) Where a 
+person committing a contravention of any of the provisions of this 
+Act or any rule, direction or order made there under is a company 
+every person who, at the time the contravention was committed, 
+was in charge of, and was responsible to, the company for the 
+conduct of business of the company as well as the company, shall 
+be guilty of the contravention and shall be liable to be proceeded 
+against and punished accordingly. Provided that nothing contained 
+in this sub-section shall render any such person liable to 
+punishment if he proves that the contravention took place without 
+his knowledge or that he exercised all due diligence to prevent such 
+contravention.
+
+The Power of Police Officer and other Officers to Enter and 
+Search: Under Section 80 of the IT (Amendment) Act, 2008, it is 
+provided that-(1) Notwithstanding anything contained in the Code 
+of Criminal Procedure 1973 any police officer, not below the rank 
+of a Inspector, or any other officer of the Central Government or a 
+State Government authorized by the Central Government in this 
+behalf may enter any public place and search and arrest without 
+warrant any person found therein who is reasonably suspected of 
+having committed or of committing or of being about to commit 
+any offence under this Act. 
+Explanation: For the purposes of this sub-section, the expression 
+'public place' includes any public conveyance, any hotel, any shop 
+or any other place intended for use by, or accessible to the public.
+Protection of Action Taken in a Good Faith: Section 84 of the IT 
+(Amendment) Act, 2008 provides that no suit, prosecution or other 
+legal proceeding shall lie against the Central Government, the State 
+Government, the Controller or any person acting on behalf of him, 
+
+The Chairperson, Members, Adjudicating officers and the staff of the Cyber 
+Appellate Tribunal for anything which in good faith done or intended to 
+be done in pursuance of this Actor any rule, regulation or order made 
+there under.
+Some Amendments Made under the Indian Penal Code by IT 
+(Amendment) Act 2008: 
+Part III of the IT (Amendment) Act, 2008, 
+provides for the following Amendments of the Indian Penal Code, 
+1860.(i) After the amendment by the Information Technology 
+(Amendment)Act, 2008, Section 4 of the Indian Penal Code provides. The 
+provisions of this Code apply also to any offence committed by:-(1) any 
+citizen of India in any place without and beyond India,(2) any person on 
+any ship or aircraft registered in India wherever it may be;(3) any person 
+in any place without and beyond India committing offence targeting a 
+computer resource located in India. Explanation: In this section-(a) The 
+word 'offence' includes every act committed outside India which,if 
+committed in India, would be punishable under this code;(b) The 
+expression 'computer resource' shall have the meaning assigned to it in 
+clause (k) of sub-section (1) of Section 2 of the Information Technology 
+Act, 2000.
+
+The role of Electronic Evidence and miscellaneous 
+provisions of the IT Act:
+Indian Evidence Act: In criminal law, for an offender to be convicted 
+for an offence, proper and sufficient evidence is needed to prove the 
+offence. The Indian Evidence Act,1872 provides for the proper and 
+effective provisions for the purposes of relevant evidence to be 
+produced before a court of law for the conviction of an offender. 
+The original Indian Evidence Act, 1872, provided for only 
+provisions for or a land documentary evidence in the physical form. 
+However, the popularity of cyberspace and internet has necessitated 
+to provide for the inclusion of electronic form of evidence on the 
+Internet and cyberspace. Therefore, the Indian Evidence Act 1872, 
+has been amended to suitably include electronic form of evidence 
+asrelevant and proper to prove before a court of law.
+
+Examiner of Electronic Evidence: Under Chapter XII-A of IT 
+(Amendment) Act, 2008 in Section 79A it is provided that-The 
+Central Government may, for the purposes of providing expert 
+opinion on electronic form evidence before any court or other 
+authority specify by notification in the Official Gazette, any 
+department, body or agency of the Central Government or a State 
+Government as an Examiner of Electronic Evidence.
+Amendments Introduced in the Indian Evidence Act 1872:
+In part IV of the IT (Amendment) Act 2008 the following amendments 
+have been made in the Indian Evidence Act 1872:
+(i) In Section 3, of the Indian Evidence Act 1872 by part IV of the 
+Information Technology (Amendment) Ac 2008 in the last 
+paragraph of the section has been amended by substituting 
+electronic signature and electronic signature certificate respectively 
+for the words digital signature and digital signature certificate. 
+
+(ii) By the amendment Act of 2008 Section 45A has been introduced in the 
+Indian Evidence Act 1872. Section 45A states that when in a proceeding 
+the court has to form an opinion on any matter relating to any information 
+transmitted or stored in any computer resource or any other electronic or 
+digital form, the opinion of the Examiner of Evidence referred to in 
+Section 79A of the Information Technology Act 2000 is a relevant fact. 
+(iii) Section 47A has been amended by the IT Act 2008 which states when 
+the Court has to form an opinion as to the electronic signature of any 
+person the opinion of the Certifying Authority which has issued the 
+Electronic Signature Certificate is a relevant fact.
+(iv) Section 67A as amended by the IT Act 2008 provides that except in the 
+case of a secure electronic signature, if the electronic signature of any 
+subscriber is alleged to have been affixed to an electronic record the fact 
+that such electronic signature is the electronic signature of the subscriber 
+must be proved.
+(v) Section 85A as amended provides that the court shall presume that every 
+electronic record purporting to be an agreement containing the electronic 
+signature of the parties was so concluded by affixing the electronic 
+signature of the parties.
+
+Understanding Evidentiary Value of Electronic Records: Section 
+65 A and Section 65-B of the Indian Evidence Act 1872:
+Keeping in view the exponential growth of technology and 
+involvement of digital gadgets in the commission of crimes. the 
+understanding of evidentiary values of electronic evidences 
+occupies an important place. 
+In an effort to keep the evidence processes up-to-date and to enable 
+Indian courts to deal with technological advances, the Indian 
+Evidence Act 1872 (hereafter 'TEA') has been amended and 
+Sections 65A and 65B have been inserted to include the validation 
+of electronic evidence.
+ In many cases a computer or digital camera (used to create or store 
+electronic records) itself is not presented in court as evidence. 
+Generally a printout is taken or CDs/ DVDs are prepared to be 
+produced as secondary evidence before the court in place of 
+primary evidence. 
+
+2 Thereafter as per Sections 65A and 65B the functionality of such 
+computer needs to be established and the person who has 
+transferred these photographs and produced them needs to certify.
+3 The Sections 65A and 65B of the Indian Evidence Act1872 as 
+mentioned below states the evidentiary values of electronic 
+evidence in the eyes of law.
+65A. Special provisions as to evidence relating to an electronic record. 
+–The contents of electronic records may be proved under the 
+provisions of Section 65B.
+65B. Admissibility of electronic records-
+(1) 
+Notwithstanding anything contained in this Act, any information 
+contained in an electronic record which is printed on a paper, stored, 
+recorded or in optical or magnetic media produced by a computer 
+(hereinafter referred to as the computer output) shall be deemed to be 
+also a document if the conditions mentioned in this section are 
+satisfied in relation to the information and computer in question and 
+shall be admissible in any proceedings without further proof or
+
+ production of the original, as evidence or any contents of the original or of 
+any fact stated therein of which direct evidence would be admissible.
+(2) The conditions referred to in sub-section : in respect of a computer output 
+shall be the following, namely: the computer output containing the 
+information was produced by the computer during the period over which 
+the computer was used regularly to store or process information for the 
+purposes of any activities regularly carried on over that period by the 
+person having lawful control over the use of the computer.
+(b) during the said period, information of the kind contained in the electronic 
+record or of the kind from which the information so contained is derived 
+was regularly fed into the computer in the ordinary course of the said 
+activities.
+(c) throughout the material part of the said period, the computer was 
+operating properly or, if not, then in respect of any period in which it 
+was not operating properly or was out of operation during that part of 
+the period, was not such as to affect the electronic record or the accuracy 
+of its contents; and(d) the information contained in the electronic record 
+reproduces or is derived from such information fed into the computer in 
+the or dinarycourse of the said activities.
+
+The Appointment of National Nodal Agency:
+ Under Section 70A as inserted by the IT (Amendment) Act 2008 the 
+Central Government may be notification published in the Official 
+Gazette designate any organization of the government as the 
+national nodal agency in respect of Critical Information 
+Infrastructure Protection. 
+The national nodal agency shall be responsible for all measure 
+including Research and Development relating to protection of 
+critical information infrastructure. 
+The duties and the manner of performing functions by the nodal 
+agency shall be as prescribed by the government.
+Indian Computer Emergency Response Team
+Under Section 70B as introduced by the Information Technology 
+(Amendment)Act, 2008-the Central Government shall appoint by 
+notification in the Official Gazette an agency of the Government to 
+serve as national agency for incident response team. The Central 
+Government shall provide with a Director-General ands uch other
+
+officers and employees as may be prescribed by the Government.....
+(4) The Indian Computer Emergency Response Team shall serve as 
+the national agency for performing the following functions in the 
+area of cyber security:
+(a)
+collection, analysis and dissemination of information on cyber 
+incidents.
+(b) forecast and alerts of cyber security incidents.
+(c) emergency measures for handling cyber security incidents.
+(d) coordination of cyber incidents response activities.
+(e) issue guidelines, advisories, vulnerability notes and whitepapers 
+relating to information security practices, procedures, prevention, 
+response and reporting of cyber incidents.
+(f) such other functions relating to cyber security as may be 
+prescribed.
+Law Regarding Electronic Cheques and Truncated Cheques: 
+Under the IT Act electronic cheques are now recognized as valid
+
+Negotiable instrument. Section 81A as inserted by the IT Act 2008 
+lays down that the provisions of this Act shall apply to the 
+electronic cheques and the truncated cheques subject to such 
+modifications and amendments as may be necessary for carrying 
+out the purposes of the Negotiable Instruments Act, 1881, by the 
+Central Government, in consultation with the Reserve Bank of 
+India, by notification in the Official Gazette.
+The Information Technology Act to have Overriding Effect:
+Under Section 81 of this Act, it is provided that this Act shall have 
+effect notwithstanding anything inconsistent therewith contained in 
+any other law for the time being in force. Provided that nothing 
+contained in this Act shall restrict any person from exercising any 
+right conferred under the Copyright Act 1957 or the Patents 
+Act1970.
+The above section provides that the provisions of this Act shall have 
+the overriding effect on any other law except the offences which are 
+not covered by the provision of this Act. And no person shall be
+
+barred to exercise his right conferred under the Copyright Act 1957 or 
+the Patents Act 1970.
+Section 83 of the IT Act empowers the Central Government to give 
+directions to any State Government as to the carrying into execution 
+in the State of any of the provisions of this Act or any rule 
+regulation or order made there under. And therefore the Central 
+Government has been given the power to give directions to the 
+State Government to implement the object, the provisions and the 
+rules or regulations or orders made under the IT Act.
+Power of Central Government to Make Rules under the Act:
+Under Section 87 of the IT Act-(1) The Central Government may, by 
+notification in the Official Gazette and in the electronic Gazette 
+make rules to carry out the provisions of this Act.
+(3) Every notification made by the Central Government under sub-
+section (1)of Section 70A and every rule made by the Central 
+Government shall be laid as soon as may be after it is made before 
+each House of Parliament, while it is in session, for a total period of
+
+thirty days which may be comprised in one session or in two or more 
+successive session, and if, before the expiry of the session 
+immediately following the session or the successive sessions 
+aforesaid, both Houses agree in making any modification in the rule 
+or both Houses agree that the rule should not be made, the rule shall 
+thereafter have effect only in such modification or annulment shall 
+be without prejudice to the validity of anything modified form or be 
+of no effect, as the case may be; so, however, that any such 
+previously done under that notification or rule.
+Constitution of Advisory Committee: 
+Under Section 88 of the IT Act it is provided that-(1) The Central 
+Government shall as soon as may be after the commencement of 
+this Act constitute a Committee called the Cyber Regulations 
+Advisory Committee.
+(2) The Cyber Regulations Advisory Committee shall consists of a 
+Chairperson and such number of other official and non-official 
+members representing the interest principally affected or having
+
+Special knowledge of the subject-matter as the Central Government 
+may deem fit.
+(3) The Cyber Regulations Advisory Committee shall advise the-
+(a)
+Central Government either generally as regards any rules or for 
+any other purpose connected with this Act
+(b) Controller in framing the regulations under this Act.
+Powers of the Controller and the State Government to Make 
+Rules: Under Section 89, of the IT Act, 2000, the Controller may 
+after consultation with the Cyber Regulation Advisory Committee 
+and with the previous approval of the Central Government by 
+notification in the Official Gazette make regulations consistent with 
+this Act and the rules made there under to carry out the purposes of 
+this Act. The matters on which regulations may provide for are 
+given in Appendix I of this work. Under Section 90, the State 
+Government has the power to make rules which provides that-(1) 
+The State Government may by notification in the Official Gazette 
+make rules to carry out the provisions of this Act.
+
+2) In particular, and without prejudice to the generality of the 
+foregoing power, such rules may provide for all or any of the 
+following matters:
+(a)
+The electronic form in which filing, issue, grant, receipt or 
+payment shall be effected under sub-section (1) of Section 6.(b) 
+Matters specified in sub-section (2) of Section 6.
+(3) Every rule made by the State Government under this section shall 
+be laid as soon as may be after it is made, before each House of the 
+State Legislature where it consists of two Houses or where such 
+Legislature consists of one House before that House.
+Reasonable Security Practices and Procedures andSensitive 
+Personal Information Rules 2011: In exercise of the powers 
+conferred by clause (ob) of sub-section (2) of Section87 read with 
+Section 43A of the IT Act 2000 the Central Government has made 
+the IT (Reasonable security practices and procedures and sensitive 
+personal information) Rules 2011. In Rule 3 of the above said rules 
+sensitive personal data or information of a person shall
+
+include information collected, received, stored, transmitted or 
+processed by body corporate or intermediary or any person 
+consisting of the following:
+• Password
+• User details as provided at the time of registration or thereafter
+• Information related to financial matters such as Bank account/credit 
+card/debit card/other payment instrument details of the users
+• Physiological and mental health condition
+• Medical records and history. Biometric information
+• Information received by body corporate for processing, stored or 
+processed under the lawful contract or otherwise. 
+•
+Call data records.
+Provided that any information that is freely available or accessible in public 
+domain or accessible under the Right to Information Act, 2005 or any 
+other law for the time being in force shall not be regarded as sensitive 
+personal data or information for purposes of these rules.
+
+Concluding Remarks:
+In India there has been a phenomenon success of the IT industry 
+through its varied software programmers for the upliftment of 
+society in general and the industrial growth in particular. 
+The IT industry in India has engaged itself for providing outsourcing 
+services to various countries in the world including the European 
+countries and the US. India's software industry with the Indian IT 
+firms being very good with the talent employed should be able to 
+use their strength of talent to transform Indian society in education, 
+healthcare, provide clean water and solve a lot of other social and 
+economic problem of the Indian society. 
+Sam Palmisano, the Chairman and CEO of IBM is of the opinion that 
+India had a tremendous amount of intellectual capital which can 
+transform the society dependent on how much of it is prioritized 
+according to society's requirements.
+
+===== NEW DOCUMENT: CSCL UNIT 5.pdf - 2026-03-16T16:11:08.184Z =====
+
+UNIT-V
+
+Penalties and Compensation: 
+  Penalties, Compensation 
+and Adjunction of 
+violations of provisions of 
+IT Act 2000 and judicial 
+review
+
+The Indian law concerning Cyberspace and Internet is covered under 
+the IT Act, it provides for basically two types of penalties for 
+violation of the provisions of IT Act. 
+Civil liability of damages or compensation. 
+Criminal liability as punishment for the commission of offences in the 
+form of either imprisonment or fine or both for the commission of 
+offences by the offenders.
+Penalty and Compensation for Damage to Computer or Computer 
+System:
+Under Section 43 of the IT Act, it has been provided that if any person 
+without permission of the owner or any other person who is in 
+charge of a computer or computer system or computer network:
+(a)
+accesses such computer, computer system or computer network or 
+computer resource.
+(b)
+(b) downloads, copies or extracts any data, computer database or 
+information from such computer or computer system, or computer
+
+network, information or data held or stored in any removable storage 
+medium.
+(c) introduces or causes to be introduced any computer contaminant or 
+computer virus.
+(d) damages or causes to be damaged any computer or computer 
+system or network, data, computer database or any other computer 
+program.
+(e) disrupts or causes disruption of any computer system or computer 
+network.
+(f) denies or causes the denial of access any person authorized to 
+access.
+(g) provides any assistance to any person to facilitate access to a 
+computer system or computer network in contravention of the 
+provisions of this Act.
+(h) charges the services availed of by a person to the account of 
+another person by tampering or manipulating any computer, system 
+or network
+
+(i)
+destroys, deletes or alters any information residing in a computer 
+resource or diminishes its value or utility or affects it injuriously 
+by any means;
+(j) steal, conceals, destroys or alters or causes any person to steal, 
+conceal, destroys or alter any computer source code used for a 
+computer resource with an intention to cause damage, that person 
+shall be liable to pay damages by way of compensation not 
+exceeding one crorer rupees to the person so affected.
+Section 43 thus provides for the explanation to the above Section 
+which defines:
+(i)
+computer contaminant
+(ii) computer database
+(iii) computer virus
+(iv) computer damage
+(v) computer source code.
+
+Compensation for Failure to Protect Data:
+Where a body corporate, possessing, dealing or handling any sensitive 
+personal data or information in a computer resource which it owns, 
+controls and operates is negligent in implementing and maintaining 
+reasonable security practices and procedures and thereby causes 
+wrongful loss or wrongful gain to any person such body corporate 
+shall be liable to pay damages by the way compensation to the 
+person so affected. 
+In Explanation to Section 43A of the IT Act provides for the 
+definitions.
+(i)
+body corporate.
+(ii) reasonable security practices and procedures.
+(iii) sensitive personal data or information.
+
+Penalty for Failure to Furnish Information, Return or any Other 
+Penalty: If any person who is required under this Act or any rules 
+or regulations made there under to:
+(a)
+furnish any document, return or report to the Controller or the 
+Certifying Authority fails to furnish the same, he shall be liable to 
+a penalty not exceeding one lakh and fifty thousand rupees for 
+each such failure.
+(b) file any return or furnish any information, books or other 
+documents with in the time specified there for in the regulations 
+fails to file return or furnish the same within the time specified 
+there for in the regulations, he shall be liable to a penalty not 
+exceeding five thousand rupees for everyday during which such 
+failure continues.
+(c) maintain books of account or records, fails to maintain the same, he 
+shall be liable to a penalty not exceeding then ten thousand rupees 
+for every day during which the failure continues.
+
+Adjudication of Disputes under the IT Act:
+The adjudication has been provided for
+()
+whether any person has committed a contravention of any of the 
+provisions of this Act or of any rule, regulation, direction or order 
+made there under which renders him liable to pay penalty or 
+compensation the Central Government shall subject to provisions 
+of sub-section (3),appoint any officer not below the rank of a 
+Director to the Government of India or equivalent officer of a State 
+Government to be an adjudicating officer for holding an enquiry in 
+the manner prescribed by the Central Government. 
+(1A)The adjudicating officer appointed under sub-section (1) shall 
+exercise jurisdiction to adjudicate matters in which the claim for 
+injury or damage does not exceed rupees five crore.
+Every adjudicating officer shall have the powers of a civil court which 
+areconferred on the Appellate Tribunal under the Sub-Section (2) 
+of Section 58 ofthe IT Act.
+
+a)
+all proceeding before the adjudicating officer shall be deemed to 
+be judicial proceedings within the meaning of Sections 193 and 
+228 of the Indian Penal Code.
+(b) and deemed to be a civil court for the purposes of Sections 345 and 
+346 of the Code of Criminal Procedure 1973.
+(c) and shall also be deemed to be a civil court for the purposes of 
+Order XXI of the Civil Procedure Code.
+The adjudicating officer adjudging quantum of compensation under 
+Chapter IX of this Act shall have due regard to-
+(a)
+the amount of gain of unfair advantage, wherever quantifiable 
+made as a result of the default.
+(b) the amount of loss caused to any person as a result of the default.
+(c) the repetitive nature of the default.
+
+The Appellate Tribunal (AT):
+Sections. 48 to 64 of Chapter X of IT Act contain the various 
+provisions relating to appellate tribunal. 
+It is significant to note that Cyber Appellate Tribunal the body which 
+existed earlier under the Information Technology Act, 2000 has 
+been merged with the Appellate Tribunal that is the Telecom 
+Dispute Settlement and Appellate Tribunal (TDSAT) under the 
+Telecom Regulatory Authority of India Act, 1997 by Finance Act 
+2017. 
+Sections 49, 50, 51, 52, 52A, 52B, 52C,53, 54 and 56 of Chapter X of 
+Information Technology Act have been omitted by Finance Act 
+2017. 
+Provisions relating to Appellate Tribunal are explained below:
+
+The Appellate Tribunal Sec. 48(1):
+The Telecom Disputes Settlement and Appellate Tribunal 
+established under Sec.14 of the Telecom Regulatory Authority 
+of India Act, 1997, 
+as per Part XIVof Chapter VI of the Finance Act, 2017, w.e.f. 
+26/05/2017, be the Appellate Tribunal for the purposes of this 
+Act and the said Appellate Tribunal shall exercise the 
+jurisdiction, powers and authority conferred on it by or under 
+this Act. 
+The Central Government shall specify, by notification, the 
+matters and places in relation to which the Appellate Tribunal 
+may exercise jurisdiction.
+(ii) The Appellate Tribunal (Qualifications, Experience and other 
+Conditions of Service of Members) shall be as per the 
+Appellate Tribunal Rules, 2017 (w.e.f.1/6/17).
+
+Appeal to Appellate Tribunal (AT) (Sec. 57):
+An appeal is a request made by the aggrieved party to modify or 
+reverse an order, Appeals function both as a process for error 
+correction and a process of clarifying and interpreting law. Any 
+person aggrieved by an order made by controller or adjudicating 
+officer under this Act may prefer an appeal to AT [Sec. 57(1)].
+On receipt of an appeal under Section 57(1), the Appellate Tribunal 
+may after giving an opportunity of being heard to the parties to the 
+appeal pass such orders there on as it thinks fit. 
+It may confirm, modify or set aside the order against which an appeal 
+has been made [Sec. 57(4)). The Appellate Authority shall send a 
+copy of every order made by it to: 
+(i)
+the parties to appeal, and (ii)the concerned controller or 
+adjudicating officer [Sec. 57(5)]. The appeal shall be dealt with by 
+it as expeditiously as possible and endeavor shall be made by it to 
+dispose of the appeal finally within 6 months from the date of 
+receipt of theappeal [Sec. 57(6)].
+
+Procedure of AT [Sec. 58(1)]:
+The Appellate Tribunal shall not be bound by the procedure laid down 
+by the Code of Civil Procedure, 1908. However, it shall be guided 
+by the principles of natural Justice and subject to the other 
+provisions of this Act and of any rules the Appellate Tribunal shall 
+have powers to regulate its own procedure including the place at 
+which it shall have its sittings.
+Powers of AT [Sec. 58(2)]:
+The Appellate Tribunal shall have for the purposes of discharging its 
+functions under this Act, the same powers as are vested in a Civil 
+Court under the Code of Civil Procedure, 1908. 
+These are as follows:
+(a)
+summoning and enforcing the attendance of any person and 
+examining him on oath.
+(b) requiring the discovery and production of documents or other 
+electronic records.
+(c) receiving evidence on affidavits.
+
+(d) issuing commissions for the examination of witnesses or 
+documents.
+(e) reviewing its decisions.
+(f) dismissing an application for default or deciding it ex-parte.
+(g) any other matter which may be prescribed.
+Right to Make Legal Representation (Sec. 59):
+The appellant may either appear in person or authorize one or more 
+legal practitioners or any of its officers to present his or its case 
+before the Appellate Tribunal.
+Civil Court not to Have Jurisdiction (Sec. 61):
+No Civil Court shall have jurisdiction to entertain any suit or 
+proceeding in respect of any matter which an adjudicating officer or 
+the Appellate Tribunal is empowered to determine under this Act. 
+No court shall grant injunction in respect of any action taken or to 
+be taken in pursuance of any power conferred by or under this Act.
+
+Appeal to High Court (Sec. 62):
+Any person aggrieved by any decision or order of Appellate Tribunal 
+may file an appeal to the High Court within 60 days from the date 
+of communication of such decision or order. 
+An appeal may be on any question of fact or law arising out of such 
+order. The High Court may allow it to be filed within a further 
+period of 60 days if it is satisfied that sufficient cause prevented 
+him from filing the appeal with in the prescribed period.
+Compounding of Contraventions and Recovery of Penalty or 
+Compensation:
+Any contravention under this Act either before or after the institution 
+of Adjudication proceedings may be compounded by the Controller 
+or any other officer who is specifically authorized by him or by the 
+Adjudicating officer subject to such condition as the Controller or 
+such other officer or the Adjudicating officer may specify: 
+Provided that such sum shall not in any case, exceed the maximum 
+amount of the penalty which may be imposed under this Act for
+
+the contravention so compounded. However, the above proviso shall 
+not apply to a person who commits the same or similar 
+contravention within a period of three years from the date on 
+which the first contravention, committed by him was 
+Compounded.  
+Any second or subsequent contravention committed after the expiry 
+of a period of three years from the date on which the contravention 
+was Previously compounded shall be deemed to be a first 
+contravention. Moreover , no proceeding or further proceeding 
+shall be taken against the person guilty of such contravention in 
+respect of the contravention so compounded.
+The word 'compound' used in this section means agreeing for 
+considerations not to prosecute a person. Compounding an offence 
+means abstaining from prosecuting the person of any offence or 
+crime in question29. Moreover, according to the proviso of this 
+section, the maximum amount of penalty or compensation which 
+can be compoundable under this Act is Rupees one crore.  
+
+Appeal to the High Court under the IT Act, and Judicial Review 
+under the Constitution of India:
+(i) Under the IT Act, any person aggrieved by any decision or order of 
+the Appellate Tribunal may file an appeal to the High Court within 
+sixty days from the date of communication of the decision or order 
+of the Appellate Tribunal to him on any question of fact or law 
+arising out of such order: Provided the High Court may, if it is 
+satisfied that the appellant was prevented by sufficient cause from 
+filing the appeal within the said period allow it to be filed within a 
+further period not exceeding sixty days. This means that the High 
+Court has been given the authority of second appeal as against the 
+orders of the first appeal before the Appellate Tribunal under the IT 
+Act. In the above provision of the IT Act, the expression 'sufficient‘ 
+within the meaning of Section 5 of the Limitation Act, 1963 or 
+Order 22, Rule9 of the CPC or any other similar provision should 
+receive a liberal construction so as to advance substantial justice 
+when no negligence or want of bona fides is imputable to a party. 
+
+(ii) Under Article 226 of the Constitution of India every High Court 
+shall have powers throughout the territories in relation to which it 
+exercises jurisdiction to issue to any person or authority, including 
+in appropriate cases, any Government, within those territories 
+directions, orders or writs, including writs in the nature of 
+mandamus, prohibition and certiorari in respect of any orders 
+against the Controller or the Adjudicating officer or the Appellate 
+Tribunal under this Act for the enforcement of any of the rights 
+conferred by Part III and for any other purposes. 
+The power conferred on a High Court by Article 226 of the 
+Constitution shall not be in derogation of the power conferred on 
+the Supreme Court by clause(2) of Article 32 of the Constitution 
+33 The powers conferred upon the High Court under Article 226 of 
+the Constitution are discretionary in nature which can be invoked 
+for the enforcement of any fundamental right or legal right but not 
+for more contractual rights arising out of an agreement particularly 
+in view of the existence of efficacious alternative remedy. 
+
+The Constitutional Court should insist upon the party to avail the same 
+instead of invoking the extraordinary writ jurisdiction of the High 
+Court.
+It is emphasized by the Court that there is need to avoid arbitrariness by 
+administrative authority in spheres where the relevant statute does not 
+lay down any quasi judicial obligation. It has been held by the Court 
+that the grounds for issuing writs of certiorari and prohibition are as 
+under follows:
+• 
+Where there is a defect of jurisdiction it attracts certiorari. But certiorari 
+would not lie because the decision of a tribunal on a subject matter within 
+a jurisdiction is considered to be wrong.
+• The principles of natural justice are not inflexible and may differ in 
+different circumstances.
+A writ of certiorari can be issued for correcting errors of jurisdiction 
+committed by inferior courts or tribunals. A writ can be issued wherein 
+exercise of jurisdiction conferred on it the court or tribunal acts illegally 
+or improperly.
+
+•
+The writ of certiorari will be issued if there is an error of law apparent 
+on the face of the record or if tribunal acts without sufficient evidence 
+or misdirects itself in considering the evidence. 
+•
+A writ petition cannot succeed if its factual basis is not established. In 
+a Calcutta case the petitioner sought inspection of his answer scripts at 
+a particular examination on the ground that he had reason to believe 
+that his answer scripts were missing. However, existence of the answer 
+scripts was proved from the order of the Controller of Examinations. It 
+was held that writ could not be issued.
+(iii) 
+Under Article 227 of the Constitution of India, every High Court shall 
+have superintendence over all courts and tribunals throughout the territories 
+in relation to which it exercises jurisdiction. Without prejudice to the 
+generality of the foregoing provisions, the High Court may:
+•
+ call for returns from such courts;
+•  make and issue general rules and prescribe forms for regulating the 
+practice and proceedings of such courts; and
+• prescribe forms in which books, entries and accounts shall be kept by the 
+officers of any such courts
+
+(iv) Under Article 32 of the Constitution of India the right to move the 
+Supreme Court by appropriate proceedings for the enforcement of 
+the remedies under this Article is guaranteed. 
+The Supreme Court shall have the power to issue directions or orders 
+or writs including writs in the nature of mandamus, prohibition and 
+certiorari whichever may be appropriate for the enforcement of any 
+of the right conferred by this Part.
+A writ of certiorari may be issued by the Supreme Court where the law 
+under which the decision was given is void. And a writ of certiorari 
+may also be issued where a decision itself violates a fundamental 
+right or the decision violates the law or is without jurisdiction. 
+Moreover, a writ of certiorari can be issued by the Supreme Court 
+where the decision is against natural justice, mala fide, perverse or 
+based on non-applicability of a venue.
+(v) Under Article 136 of the Constitution of India the Supreme Court 
+may in its discretion, grant special leave to appeal from any 
+Judgment, decree, determination, sentence or order in any case or
+
+matter passed or made by any court or tribunal in the territory of India. 
+Under this Article apart from above remedies discussed there can also 
+be a special leave to appeal against the order or Judgment of the 
+Appellate Tribunal under the Constitution of India. 
+under Article 136 may be exercised against an order passed by any 
+tribunal. This jurisdiction is not subject to any condition that the 
+party who seeks special leave of the Supreme Court to appeal from 
+such order is to exhaust all his remedies including petition under 
+Article 226.
+The Supreme Court would not allow a new point (which was not taken 
+or not pressed before the High Court) to be raised before it or which 
+was sought to be introduced by filing additional grounds. Where the 
+point could have been urged before the High Court under Articles 
+226 or 227, the Supreme Court would not permit the appellant to 
+raise it for the first time before it not to assail an undertaking given 
+by him in the High Court. 
+
+It has been held by the Supreme Court that where the judgment is 
+tainted with serious legal infirmities or is founded on a legal 
+construction which is wrong, the special leave may be granted. Also 
+it has been held by the Supreme Court that a petition for special 
+leave would be granted where approach of the court whose 
+judgment is under appeal is wrong in law.

@@ -2,6 +2,42 @@
 
 A production-ready full-stack application that helps students manage their study schedule using AI-powered adaptive scheduling, stress tracking, and an AI chatbot assistant.
 
+**Version:** 2.0 (Recently Upgraded!) ✨
+
+## 🎉 What's New in v2.0
+
+### 📤 Multi-File Upload Support
+- Upload **PDF, Word, PowerPoint, Text, CSV, JSON** files
+- **Batch upload** up to 10 files at once
+- **Drag & drop** interface
+- File size up to **50MB** each
+- Real-time upload status tracking
+
+### 🎨 Beautiful Light Theme
+- Modern **light theme** throughout the app
+- Professional **blue/gray/white** color palette
+- Enhanced **accessibility** (WCAG AA compliant)
+- Better contrast for readability
+- Responsive design on all devices
+
+### 🎯 Professional Icons
+- **100+ Lucide React icons** for consistent styling
+- Icons throughout the UI for better UX
+- Professional appearance
+- Easy to maintain and extend
+
+### 💄 Enhanced UI/UX
+- Gradient cards on Dashboard
+- Better typography and spacing
+- Improved error messages
+- Educational info cards
+- Modern button styling
+- Helpful tips and hints
+
+**See full details in [IMPLEMENTATION_COMPLETE.md](IMPLEMENTATION_COMPLETE.md) or [UPGRADE_REPORT.md](UPGRADE_REPORT.md)**
+
+---
+
 ## 🚀 Features
 
 ### Core Features
@@ -14,6 +50,7 @@ A production-ready full-stack application that helps students manage their study
   - Preferred time slots
 - **Stress Tracking**: Daily stress level logging with analytics and trend visualization
 - **AI Chatbot**: Google Gemini-powered chatbot for academic assistance
+- **Study Resources**: Upload your study materials for AI-enhanced learning
 - **Dashboard**: Comprehensive analytics including:
   - Today's schedule
   - Upcoming deadlines
@@ -26,8 +63,11 @@ A production-ready full-stack application that helps students manage their study
 - Automatic workload adjustment based on stress levels
 - Weekly performance reports
 - Admin panel capabilities
+- **Multi-file upload** for knowledge base
+- **Professional UI** with light theme and icons
 
 ## 🛠️ Tech Stack
+
 
 ### Backend
 - **Node.js** + **Express.js** - Server framework
@@ -318,6 +358,22 @@ Ensure all environment variables are set in production:
 3. Make your changes
 4. Submit a pull request
 
+## � Documentation
+
+### Available Guides
+- **[QUICKSTART.md](QUICKSTART.md)** - 5-minute setup guide
+- **[IMPLEMENTATION_COMPLETE.md](IMPLEMENTATION_COMPLETE.md)** - v2.0 completion summary
+- **[UPGRADE_REPORT.md](UPGRADE_REPORT.md)** - Detailed upgrade documentation
+- **[VISUAL_GUIDE.md](VISUAL_GUIDE.md)** - UI/UX changes with examples
+- **[TECHNICAL_DOCS.md](TECHNICAL_DOCS.md)** - Architecture & API reference
+- **[CHANGELIST.md](CHANGELIST.md)** - Complete list of changes
+
+### Quick Links
+- [How to upload files](QUICKSTART.md#resources-new)
+- [New API endpoints](TECHNICAL_DOCS.md#resource-endpoints)
+- [Troubleshooting](QUICKSTART.md#troubleshooting)
+- [Deployment guide](QUICKSTART.md#production-deployment)
+
 ## 📄 License
 
 This project is licensed under the ISC License.
@@ -329,3 +385,5 @@ Time-Split Development Team
 ---
 
 **Note**: Make sure to change the JWT_SECRET in production and keep your API keys secure!
+
+**v2.0 Update**: This version includes multi-file upload support, light theme UI, and 100+ professional icons. See [IMPLEMENTATION_COMPLETE.md](IMPLEMENTATION_COMPLETE.md) for details!

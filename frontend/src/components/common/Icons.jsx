@@ -1,104 +1,260 @@
+import {
+  LayoutDashboard,
+  CheckSquare,
+  Calendar,
+  Zap,
+  MessageCircle,
+  BookOpen,
+  User,
+  LogOut,
+  Menu,
+  X,
+  File,
+  FileText,
+  Upload,
+  Download,
+  Trash2,
+  Edit,
+  Save,
+  Plus,
+  ArrowRight,
+  Clock,
+  AlertCircle,
+  CheckCircle,
+  XCircle,
+  Home,
+  Settings,
+  Bell,
+  Search,
+  Filter,
+  Eye,
+  EyeOff,
+  Loader,
+  MoreVertical,
+  ChevronDown,
+  ChevronUp,
+  ChevronRight,
+  BarChart3,
+  TrendingUp,
+  Award,
+  Target,
+  Brain,
+  Heart,
+  Wind,
+  Coffee,
+  Moon,
+  Sun,
+  GitBranch,
+  FileJson,
+  Database,
+  Send,
+  Paperclip,
+} from 'lucide-react';
+
+// Main Navigation Icons
 export const IconDashboard = ({ className = 'w-5 h-5' }) => (
-  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-    <path
-      d="M3 13h8V3H3v10Zm10 8h8V11h-8v10ZM3 21h8v-6H3v6Zm10-18v6h8V3h-8Z"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinejoin="round"
-    />
-  </svg>
+  <LayoutDashboard className={className} strokeWidth={2} />
 );
 
 export const IconTasks = ({ className = 'w-5 h-5' }) => (
-  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-    <path
-      d="M9 11.5l2 2L15.5 9"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinejoin="round"
-    />
-  </svg>
+  <CheckSquare className={className} strokeWidth={2} />
 );
 
 export const IconSchedule = ({ className = 'w-5 h-5' }) => (
-  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-    <path
-      d="M7 3v3M17 3v3"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-    />
-    <path
-      d="M4 7h16v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7Z"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M8 11h4M8 15h8"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-    />
-  </svg>
+  <Calendar className={className} strokeWidth={2} />
 );
 
 export const IconStress = ({ className = 'w-5 h-5' }) => (
-  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-    <path
-      d="M12 21s8-4.5 8-11a4.5 4.5 0 0 0-8-2.5A4.5 4.5 0 0 0 4 10c0 6.5 8 11 8 11Z"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M9 11h6"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-    />
-  </svg>
+  <Zap className={className} strokeWidth={2} />
 );
 
 export const IconChat = ({ className = 'w-5 h-5' }) => (
-  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-    <path
-      d="M4 5h16v11a2 2 0 0 1-2 2H9l-5 3v-3H6a2 2 0 0 1-2-2V5Z"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M8 9h8M8 13h5"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-    />
-  </svg>
+  <MessageCircle className={className} strokeWidth={2} />
 );
 
 export const IconResources = ({ className = 'w-5 h-5' }) => (
-  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-    <path
-      d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14H6a2 2 0 0 0-2 2V6Z"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M6 4v16"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-    />
-  </svg>
+  <BookOpen className={className} strokeWidth={2} />
+);
+
+// Other Common Icons
+export const IconUser = ({ className = 'w-5 h-5' }) => (
+  <User className={className} strokeWidth={2} />
+);
+
+export const IconLogout = ({ className = 'w-5 h-5' }) => (
+  <LogOut className={className} strokeWidth={2} />
+);
+
+export const IconMenu = ({ className = 'w-5 h-5' }) => (
+  <Menu className={className} strokeWidth={2} />
+);
+
+export const IconClose = ({ className = 'w-5 h-5' }) => (
+  <X className={className} strokeWidth={2} />
+);
+
+export const IconUpload = ({ className = 'w-5 h-5' }) => (
+  <Upload className={className} strokeWidth={2} />
+);
+
+export const IconDownload = ({ className = 'w-5 h-5' }) => (
+  <Download className={className} strokeWidth={2} />
+);
+
+export const IconDelete = ({ className = 'w-5 h-5' }) => (
+  <Trash2 className={className} strokeWidth={2} />
+);
+
+export const IconEdit = ({ className = 'w-5 h-5' }) => (
+  <Edit className={className} strokeWidth={2} />
+);
+
+export const IconSave = ({ className = 'w-5 h-5' }) => (
+  <Save className={className} strokeWidth={2} />
+);
+
+export const IconPlus = ({ className = 'w-5 h-5' }) => (
+  <Plus className={className} strokeWidth={2} />
+);
+
+export const IconArrowRight = ({ className = 'w-5 h-5' }) => (
+  <ArrowRight className={className} strokeWidth={2} />
+);
+
+export const IconClock = ({ className = 'w-5 h-5' }) => (
+  <Clock className={className} strokeWidth={2} />
+);
+
+export const IconAlert = ({ className = 'w-5 h-5' }) => (
+  <AlertCircle className={className} strokeWidth={2} />
+);
+
+export const IconSuccess = ({ className = 'w-5 h-5' }) => (
+  <CheckCircle className={className} strokeWidth={2} />
+);
+
+export const IconError = ({ className = 'w-5 h-5' }) => (
+  <XCircle className={className} strokeWidth={2} />
+);
+
+export const IconHome = ({ className = 'w-5 h-5' }) => (
+  <Home className={className} strokeWidth={2} />
+);
+
+export const IconSettings = ({ className = 'w-5 h-5' }) => (
+  <Settings className={className} strokeWidth={2} />
+);
+
+export const IconBell = ({ className = 'w-5 h-5' }) => (
+  <Bell className={className} strokeWidth={2} />
+);
+
+export const IconSearch = ({ className = 'w-5 h-5' }) => (
+  <Search className={className} strokeWidth={2} />
+);
+
+export const IconFilter = ({ className = 'w-5 h-5' }) => (
+  <Filter className={className} strokeWidth={2} />
+);
+
+export const IconEye = ({ className = 'w-5 h-5' }) => (
+  <Eye className={className} strokeWidth={2} />
+);
+
+export const IconEyeOff = ({ className = 'w-5 h-5' }) => (
+  <EyeOff className={className} strokeWidth={2} />
+);
+
+export const IconLoader = ({ className = 'w-5 h-5' }) => (
+  <Loader className={`${className} animate-spin`} strokeWidth={2} />
+);
+
+export const IconMoreVertical = ({ className = 'w-5 h-5' }) => (
+  <MoreVertical className={className} strokeWidth={2} />
+);
+
+export const IconChevronDown = ({ className = 'w-5 h-5' }) => (
+  <ChevronDown className={className} strokeWidth={2} />
+);
+
+export const IconChevronUp = ({ className = 'w-5 h-5' }) => (
+  <ChevronUp className={className} strokeWidth={2} />
+);
+
+export const IconChevronRight = ({ className = 'w-5 h-5' }) => (
+  <ChevronRight className={className} strokeWidth={2} />
+);
+
+export const IconChart = ({ className = 'w-5 h-5' }) => (
+  <BarChart3 className={className} strokeWidth={2} />
+);
+
+export const IconTrend = ({ className = 'w-5 h-5' }) => (
+  <TrendingUp className={className} strokeWidth={2} />
+);
+
+export const IconAward = ({ className = 'w-5 h-5' }) => (
+  <Award className={className} strokeWidth={2} />
+);
+
+export const IconTarget = ({ className = 'w-5 h-5' }) => (
+  <Target className={className} strokeWidth={2} />
+);
+
+export const IconBrain = ({ className = 'w-5 h-5' }) => (
+  <Brain className={className} strokeWidth={2} />
+);
+
+export const IconHeart = ({ className = 'w-5 h-5' }) => (
+  <Heart className={className} strokeWidth={2} />
+);
+
+export const IconWind = ({ className = 'w-5 h-5' }) => (
+  <Wind className={className} strokeWidth={2} />
+);
+
+export const IconCoffee = ({ className = 'w-5 h-5' }) => (
+  <Coffee className={className} strokeWidth={2} />
+);
+
+export const IconMoon = ({ className = 'w-5 h-5' }) => (
+  <Moon className={className} strokeWidth={2} />
+);
+
+export const IconSun = ({ className = 'w-5 h-5' }) => (
+  <Sun className={className} strokeWidth={2} />
+);
+
+export const IconFile = ({ className = 'w-5 h-5' }) => (
+  <File className={className} strokeWidth={2} />
+);
+
+export const IconFileText = ({ className = 'w-5 h-5' }) => (
+  <FileText className={className} strokeWidth={2} />
+);
+
+export const IconFilePdf = ({ className = 'w-5 h-5' }) => (
+  <File className={className} strokeWidth={2} />
+);
+
+export const IconFileWord = ({ className = 'w-5 h-5' }) => (
+  <File className={className} strokeWidth={2} />
+);
+
+export const IconFileJson = ({ className = 'w-5 h-5' }) => (
+  <FileJson className={className} strokeWidth={2} />
+);
+
+export const IconDatabase = ({ className = 'w-5 h-5' }) => (
+  <Database className={className} strokeWidth={2} />
+);
+
+export const IconSend = ({ className = 'w-5 h-5' }) => (
+  <Send className={className} strokeWidth={2} />
+);
+
+export const IconAttach = ({ className = 'w-5 h-5' }) => (
+  <Paperclip className={className} strokeWidth={2} />
 );
 
 export const IconProfile = ({ className = 'w-5 h-5' }) => (
